@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">Chemistry</string>
-    <string name="achbutt1">Достижение 1</string>
-    <string name="achbutt2">Достижение 2</string>
-    <string name="achbutt3">Достижение 3</string>
-    <string name="achbutt4">Достижение 4</string>
-    <string name="achbutt5">Достижение 5</string>
-    <string name="achbutt6">Достижение 6</string>
-    <string name="achbutt7">Достижение 7</string>
-    <string name="achbutt8">Достижение 8</string>
-    <string name="achbutt9">Достижение 9</string>
+<string name="app_name">Chemistry</string>
+<string name="achbutt1">Достижение заблокировано</string>
+<string name="achbutt2">Достижение заблокировано</string>
+<string name="achbutt3">Достижение заблокировано</string>
+<string name="achbutt4">Достижение заблокировано</string>
+<string name="achbutt5">Достижение заблокировано</string>
+<string name="achbutt6">Достижение заблокировано</string>
+<string name="achbutt7">Достижение заблокировано</string>
+<string name="achbutt8">Достижение заблокировано</string>
+<string name="achbutt9">Достижение заблокировано</string>
 </resources>
