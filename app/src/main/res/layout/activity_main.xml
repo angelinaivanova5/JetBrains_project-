@@ -36,4 +36,17 @@
         app:layout_constraintLeft_toLeftOf="@+id/btn1"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginLeft="6dp" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bazaelementov"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="95dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="111dp"
+        android:layout_marginRight="95dp" />
 </android.support.constraint.ConstraintLayout>

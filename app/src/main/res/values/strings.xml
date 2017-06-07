@@ -1,12 +1,24 @@
 <resources>
-<string name="app_name">Chemistry</string>
-<string name="achbutt1">Достижение заблокировано</string>
-<string name="achbutt2">Достижение заблокировано</string>
-<string name="achbutt3">Достижение заблокировано</string>
-<string name="achbutt4">Достижение заблокировано</string>
-<string name="achbutt5">Достижение заблокировано</string>
-<string name="achbutt6">Достижение заблокировано</string>
-<string name="achbutt7">Достижение заблокировано</string>
-<string name="achbutt8">Достижение заблокировано</string>
-<string name="achbutt9">Достижение заблокировано</string>
+    <string name="app_name">Chemistry</string>
+    <string name="achbutt1">Достижение заблокировано</string>
+    <string name="achbutt2">Достижение заблокировано</string>
+    <string name="achbutt3">Достижение заблокировано</string>
+    <string name="achbutt4">Достижение заблокировано</string>
+    <string name="achbutt5">Достижение заблокировано</string>
+    <string name="achbutt6">Достижение заблокировано</string>
+    <string name="achbutt7">Достижение заблокировано</string>
+    <string name="achbutt8">Достижение заблокировано</string>
+    <string name="achbutt9">Достижение заблокировано</string>
+    <string name="belem1">C</string>
+    <string name="belem2">O2</string>
+    <string name="belem3">Na</string>
+    <string name="belem4">Cl2</string>
+    <string name="belem5">H2</string>
+    <string name="belem6">S</string>
+    <string name="belem7">Mg</string>
+    <string name="belem8">Al</string>
+    <string name="belem9">Cu</string>
+    <string name="belem10">Ca</string>
+    <string name="belem11">Zn</string>
+    <string name="belem12">Fe</string>
 </resources>

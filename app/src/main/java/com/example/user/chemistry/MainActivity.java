@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     int k = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                k+=1;
-                Toast.makeText(MainActivity.this, "HH", Toast.LENGTH_SHORT).show();
+                k += 1;
+                Toast.makeText(MainActivity.this, "THH", Toast.LENGTH_SHORT).show();
             }
         });
         Button button2 = (Button) findViewById(R.id.btn2);
@@ -31,5 +32,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    };
+        Button button3 = (Button) findViewById(R.id.btn3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, BazaElementovActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
 }
+
