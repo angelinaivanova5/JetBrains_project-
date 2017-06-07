@@ -1,4 +1,4 @@
-package com.example.user.myapplication;
+package com.example.user.chemistry;
 
 import android.os.Bundle;
 
@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
+
+import com.example.user.myapplication.R;
 
 public class Main3Activity extends AppCompatActivity {
     @Override
@@ -27,7 +29,6 @@ public class Main3Activity extends AppCompatActivity {
                 }
                 button1.setText(btnText);
                 Intent intent = new Intent(this_, Main2Activity.class);
-                intent.putExtra("name",name.getText().toString());
                 startActivity(intent);
             }
         };

@@ -1,45 +1,53 @@
 package com.example.user.chemistry;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.content.Intent;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+
+import com.example.user.myapplication.R;
 
 public class MainActivity extends AppCompatActivity {
-    int k = 0;
-
+    private String tag = "101";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Button button1 = (Button) findViewById(R.id.btn1);
-        button1.setOnClickListener(new View.OnClickListener() {
+        Log.d(tag, "Create1");
+        final Button button = (Button) findViewById(R.id.bin1);
+        final MainActivity this_ = this;
+        View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                k += 1;
-                Toast.makeText(MainActivity.this, "THH", Toast.LENGTH_SHORT).show();
-            }
-        });
-        Button button2 = (Button) findViewById(R.id.btn2);
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, AchievmentsActivity.class);
-                intent.putExtra("AAAAAAA", k);
+                Intent intent = new Intent(this_, Main2Activity.class);
                 startActivity(intent);
             }
-        });
-        Button button3 = (Button) findViewById(R.id.btn3);
-        button3.setOnClickListener(new View.OnClickListener() {
+        };
+        button.setOnClickListener(listener);
+        Button button2 = (Button) findViewById(R.id.bin2);
+
+        View.OnClickListener buttonListener = new View.OnClickListener(){
+
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, BazaElementovActivity.class);
                 startActivity(intent);
             }
-        });
+        };
+
+        button2.setOnClickListener(buttonListener);
+        Button button3 = (Button) findViewById(R.id.bin3);
+        View.OnClickListener buttonListener1 = new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AchievmentsActivity.class);
+                startActivity(intent);
+            }
+        };
+
+        button3.setOnClickListener(buttonListener1);
     }
 }
-

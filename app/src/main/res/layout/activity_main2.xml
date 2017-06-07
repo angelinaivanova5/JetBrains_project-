@@ -18,7 +18,7 @@
         android:id="@+id/bin20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Результат"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="86dp" />
@@ -27,17 +27,17 @@
         android:id="@+id/bin21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        android:layout_alignBaseline="@+id/button3"
-        android:layout_alignBottom="@+id/button3"
+        android:text="Элемент2"
+        android:layout_alignBaseline="@+id/button30"
+        android:layout_alignBottom="@+id/button30"
         android:layout_alignRight="@+id/bin4"
         android:layout_alignEnd="@+id/bin4" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Элемент1"
         android:layout_below="@+id/bin4"
         android:layout_alignLeft="@+id/bin4"
         android:layout_alignStart="@+id/bin4"
