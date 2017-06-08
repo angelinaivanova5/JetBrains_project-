@@ -1,17 +1,14 @@
 package com.example.user.chemistry;
 
 import android.os.Bundle;
-
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
-
 import com.example.user.myapplication.R;
-
 public class Main3Activity extends AppCompatActivity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
         final Button button = (Button) findViewById(R.id.bin5);
@@ -19,17 +16,17 @@ public class Main3Activity extends AppCompatActivity {
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String btnText = button.getText().toString();
-                Button button1 = (Button) findViewById(R.id.bin20);
-                String btnText1 = button1.getText().toString();
-                if (btnText1.equals("")) {
-                    button1 = (Button) findViewById(R.id.bin20);
-                } else {
-                    button1 = (Button) findViewById(R.id.bin21);
+                switch (v.getId()) {
+                    case R.id.bin5:
+                        Intent intent = new Intent(this_, Main2Activity.class);
+                        Button button1 = (Button) findViewById(R.id.bin5);
+                        intent.putExtra("lol", button1.getText().toString());
+                        setResult(RESULT_OK, intent);
+                        finish();
+                        break;
+                    default:
+                        break;
                 }
-                button1.setText(btnText);
-                Intent intent = new Intent(this_, Main2Activity.class);
-                startActivity(intent);
             }
         };
         button.setOnClickListener(listener);

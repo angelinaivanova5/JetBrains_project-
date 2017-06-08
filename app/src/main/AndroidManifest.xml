@@ -20,6 +20,7 @@
         <activity android:name="com.example.user.chemistry.Main3Activity" />
         <activity android:name="com.example.user.chemistry.AchievmentsActivity" />
         <activity android:name="com.example.user.chemistry.BazaElementovActivity" />
+        <activity android:name="com.example.user.chemistry.Main4Activity"></activity>
     </application>
 
 </manifest>

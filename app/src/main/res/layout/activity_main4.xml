@@ -16,7 +16,7 @@
         android:layout_below="@id/bin5"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
-        android:text="S" />
+        android:text="Locked" />
     <Button
         android:id="@+id/bin7"
         android:layout_width="wrap_content"
@@ -24,7 +24,7 @@
         android:layout_below="@id/bin6"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
-        android:text="Cl" />
+        android:text="Locked" />
     <Button
         android:id="@+id/bin8"
         android:layout_width="wrap_content"

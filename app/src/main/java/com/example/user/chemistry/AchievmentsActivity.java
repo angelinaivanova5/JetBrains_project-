@@ -10,12 +10,17 @@ import com.example.user.myapplication.R;
 
 
 public class AchievmentsActivity extends AppCompatActivity {
+
     public void onCreate(Bundle savedInstanceState)
 
     {
+        Intent intent = getIntent();
+        int k = intent.getIntExtra("ml", -1);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.achievments);
-        Intent intent = getIntent();
-
+        if (k > 0) {
+        ImageButton button1 = (ImageButton) findViewById(R.id.imageButton1);
+            button1.setImageResource(android.R.drawable.checkbox_on_background);
+        }
     }
 }
