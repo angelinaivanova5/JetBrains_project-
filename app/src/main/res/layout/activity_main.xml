@@ -10,8 +10,8 @@
 
     <Button
         android:id="@+id/btn1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="148dp"
+        android:layout_height="67dp"
         android:text="ClickME"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
@@ -22,12 +22,14 @@
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="109dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="91dp"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="140dp"
+        android:layout_height="56dp"
         android:text="ach"
         tools:layout_constraintTop_creator="1"
         android:layout_marginStart="6dp"
@@ -35,18 +37,19 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="@+id/btn1"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="6dp" />
+        android:layout_marginLeft="6dp"
+        tools:layout_editor_absoluteY="211dp" />
 
     <Button
         android:id="@+id/btn3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="bazaelementov"
+        android:layout_width="148dp"
+        android:layout_height="72dp"
+        android:text="baza_elementov"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="95dp"
+        android:layout_marginEnd="110dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="111dp"
-        android:layout_marginRight="95dp" />
+        android:layout_marginBottom="117dp"
+        android:layout_marginRight="112dp" />
 </android.support.constraint.ConstraintLayout>

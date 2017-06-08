@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 k += 1;
-                Toast.makeText(MainActivity.this, "THH", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "I am done", Toast.LENGTH_SHORT).show();
             }
         });
         Button button2 = (Button) findViewById(R.id.btn2);
@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }
 
