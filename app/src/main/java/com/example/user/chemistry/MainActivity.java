@@ -10,6 +10,7 @@ import android.widget.Button;
 import com.example.user.myapplication.R;
 
 public class MainActivity extends AppCompatActivity {
+    int j = 0;
     private String tag = "101";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                j++;
                 Intent intent = new Intent(this_, Main2Activity.class);
                 startActivity(intent);
             }
@@ -43,7 +45,9 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(MainActivity.this, AchievmentsActivity.class);
+                intent.putExtra("dd", j);
                 startActivity(intent);
             }
         };

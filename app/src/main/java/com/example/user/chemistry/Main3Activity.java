@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.content.Intent;
 import com.example.user.myapplication.R;
 public class Main3Activity extends AppCompatActivity {
+    int j = 0;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +22,7 @@ public class Main3Activity extends AppCompatActivity {
                         Intent intent = new Intent(this_, Main2Activity.class);
                         Button button1 = (Button) findViewById(R.id.bin5);
                         intent.putExtra("lol", button1.getText().toString());
+
                         setResult(RESULT_OK, intent);
                         finish();
                         break;
