@@ -61,11 +61,47 @@ public class Main2Activity extends AppCompatActivity {
         res[4][3]="HCl";
         boolres[3][4]=true;
         boolres[4][3]=true;
+        res[1][4]="H2O";
+        res[4][1]="H2O";
+        boolres[1][4]=true;
+        boolres[4][1]=true;
+        res[1][11]="CO2";
+        res[11][1]="CO2";
+        boolres[1][11]=true;
+        boolres[11][1]=true;
+        res[3][5]="NaCl";
+        res[5][3]="NaCl";
+        boolres[3][5]=true;
+        boolres[5][3]=true;
+        res[2][6]="Al2S3";
+        res[6][2]="Al2S3";
+        boolres[2][6]=true;
+        boolres[6][2]=true;
+        res[1][7]="MgO";
+        res[7][1]="MgO";
+        boolres[1][7]=true;
+        boolres[7][1]=true;
+        res[8][1]="CaO";
+        res[1][8]="CaO";
+        boolres[8][1]=true;
+        boolres[1][8]=true;
+        res[1][9]="CuO";
+        res[9][1]="CuO";
+        boolres[1][9]=true;
+        boolres[9][1]=true;
         final Map <String, Integer> elements= new HashMap<>();
         elements.put("O2",1);
         elements.put("S",2);
         elements.put("Cl",3);
         elements.put("H",4);
+        elements.put("Na",5);
+        elements.put("Al",6);
+        elements.put("Mg",7);
+        elements.put("Ca",8);
+        elements.put("Cu",9);
+        elements.put("Zn",10);
+        elements.put("C",11);
+
         final Button button1 = (Button) findViewById(R.id.bin22);
         View.OnClickListener listener1 = new View.OnClickListener() {
             @Override
@@ -77,8 +113,12 @@ public class Main2Activity extends AppCompatActivity {
                 if ((!a.equals(""))&&(!b.equals(""))){
                     int number1 = elements.get(a);
                     int number2 = elements.get(b);
-                    if (boolres[number1][number2]=true){
+                    if (boolres[number1][number2]){
                         button1.setText(res[number1][number2]);
+                        button11.setText("");
+                        button12.setText("");
+                    } else {
+                        button1.setText("Реакция не идет");
                         button11.setText("");
                         button12.setText("");
                     }

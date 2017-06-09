@@ -81,5 +81,125 @@ public class Main3Activity extends AppCompatActivity {
             }
         };
         button3.setOnClickListener(listener3);
+        final Button button4 = (Button) findViewById(R.id.bin9);
+        View.OnClickListener listener4 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()) {
+                    case R.id.bin9:
+                        Intent intent1 = new Intent(this_, Main2Activity.class);
+                        intent1.putExtra("lol", button4.getText().toString());
+                        setResult(RESULT_OK, intent1);
+                        finish();
+                        break;
+                    default:
+                        break;
+                }
+            }
+        };
+        button4.setOnClickListener(listener4);
+        final Button button5 = (Button) findViewById(R.id.bin10);
+        View.OnClickListener listener5 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()) {
+                    case R.id.bin10:
+                        Intent intent1 = new Intent(this_, Main2Activity.class);
+                        intent1.putExtra("lol", button5.getText().toString());
+                        setResult(RESULT_OK, intent1);
+                        finish();
+                        break;
+                    default:
+                        break;
+                }
+            }
+        };
+        button5.setOnClickListener(listener5);
+        final Button button6 = (Button) findViewById(R.id.bin11);
+        View.OnClickListener listener6 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()) {
+                    case R.id.bin11:
+                        Intent intent1 = new Intent(this_, Main2Activity.class);
+                        intent1.putExtra("lol", button6.getText().toString());
+                        setResult(RESULT_OK, intent1);
+                        finish();
+                        break;
+                    default:
+                        break;
+                }
+            }
+        };
+        button6.setOnClickListener(listener6);
+        final Button button7 = (Button) findViewById(R.id.bin12);
+        View.OnClickListener listener7 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()) {
+                    case R.id.bin12:
+                        Intent intent1 = new Intent(this_, Main2Activity.class);
+                        intent1.putExtra("lol", button7.getText().toString());
+                        setResult(RESULT_OK, intent1);
+                        finish();
+                        break;
+                    default:
+                        break;
+                }
+            }
+        };
+        button7.setOnClickListener(listener7);
+        final Button button8 = (Button) findViewById(R.id.bin13);
+        View.OnClickListener listener8 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()) {
+                    case R.id.bin13:
+                        Intent intent1 = new Intent(this_, Main2Activity.class);
+                        intent1.putExtra("lol", button8.getText().toString());
+                        setResult(RESULT_OK, intent1);
+                        finish();
+                        break;
+                    default:
+                        break;
+                }
+            }
+        };
+        button8.setOnClickListener(listener8);
+        final Button button9 = (Button) findViewById(R.id.bin14);
+        View.OnClickListener listener9 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()) {
+                    case R.id.bin14:
+                        Intent intent1 = new Intent(this_, Main2Activity.class);
+                        intent1.putExtra("lol", button9.getText().toString());
+                        setResult(RESULT_OK, intent1);
+                        finish();
+                        break;
+                    default:
+                        break;
+                }
+            }
+        };
+        button9.setOnClickListener(listener9);
+        final Button button10 = (Button) findViewById(R.id.bin15);
+        View.OnClickListener listener10 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()) {
+                    case R.id.bin15:
+                        Intent intent1 = new Intent(this_, Main2Activity.class);
+                        intent1.putExtra("lol", button10.getText().toString());
+                        setResult(RESULT_OK, intent1);
+                        finish();
+                        break;
+                    default:
+                        break;
+                }
+            }
+        };
+        button10.setOnClickListener(listener10);
+
     }
 }
