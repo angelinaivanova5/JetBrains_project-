@@ -1,39 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    android:background="@color/backg">
+
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/bin1"
-        android:height="100dp"
-        android:width="200dp"
-        android:text="Начать игру"
-        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:width="200dp"
+        android:height="100dp"
+        android:backgroundTint="@color/button"
+        android:text="Начать игру"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/bin2"
-        android:height="50dp"
-        android:width="200dp"
-        android:text="Коллекция элементов"
-        android:layout_marginTop="50dp"
-        android:layout_below="@+id/bin1"
-        android:layout_alignLeft="@+id/bin1"
-        android:layout_alignStart="@+id/bin1" />
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/bin3"
-        android:height="50dp"
+        android:layout_alignLeft="@+id/bin1"
+        android:layout_alignStart="@+id/bin1"
+        android:layout_below="@+id/bin1"
+        android:layout_marginTop="50dp"
         android:width="200dp"
-        android:text="Достижения"
-        android:layout_below="@+id/bin2"
+        android:height="70dp"
+        android:backgroundTint="@color/button"
+        android:text="Коллекция элементов"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bin3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/bin2"
         android:layout_alignStart="@+id/bin2"
-        android:layout_marginTop="50dp" />
+        android:layout_below="@+id/bin2"
+        android:layout_marginTop="50dp"
+        android:width="200dp"
+        android:height="60dp"
+        android:backgroundTint="@color/button"
+        android:text="Достижения"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Chemistry"
+        android:textColor="@color/name"
+        android:textSize="45sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>
