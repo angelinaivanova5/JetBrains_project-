@@ -15,7 +15,8 @@
         android:layout_marginLeft="100dp"
         android:layout_marginStart="80dp"
         android:backgroundTint="@color/colorPrimary"
-        android:text="" />
+        android:text=""
+        android:textAllCaps="false"/>
 
     <Button
         android:id="@+id/bin21"
@@ -27,7 +28,8 @@
         android:layout_toEndOf="@+id/bin20"
         android:layout_toRightOf="@+id/bin20"
         android:backgroundTint="@color/colorPrimary"
-        android:text="" />
+        android:text=""
+        android:textAllCaps="false"/>
 
     <Button
         android:id="@+id/bin4"
