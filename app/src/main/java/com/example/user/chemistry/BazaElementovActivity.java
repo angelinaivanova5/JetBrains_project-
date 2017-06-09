@@ -4,9 +4,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 import android.widget.Button;
-import android.content.Intent;
+
 import com.example.user.myapplication.R;
 
       public class BazaElementovActivity extends AppCompatActivity {
@@ -23,6 +25,10 @@ import com.example.user.myapplication.R;
                   public void onClick(View v) {
                       Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.C), Toast.LENGTH_LONG);
                       toast.setGravity(Gravity.CENTER, 0,160);
+                      LinearLayout toastContainer = (LinearLayout) toast.getView();
+                      ImageView catImageView = new ImageView(getApplicationContext());
+                      catImageView.setImageResource(R.drawable.coal_anthracite);
+                      toastContainer.addView(catImageView, 0);
                       toast.show();
 
                   }
