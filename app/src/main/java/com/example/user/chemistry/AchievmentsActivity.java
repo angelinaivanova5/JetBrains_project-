@@ -19,6 +19,7 @@ public class AchievmentsActivity extends MainActivity {
         setContentView(R.layout.achievments);
         Intent intent = getIntent();
         int j = intent.getIntExtra("dd", -1);
+        int q = intent.getIntExtra("gq", -1);
         if (j >= 1) {
             ImageButton button1 = (ImageButton) findViewById(R.id.imageButton1);
             button1.setImageResource(android.R.drawable.checkbox_on_background);
@@ -26,7 +27,7 @@ public class AchievmentsActivity extends MainActivity {
             button2.setText("Юный Химик");
             button2.setBackgroundColor(0xFFAFF36B);
         }
-        if (j >= 2) {
+        if (j >= 50) {
             ImageButton button3 = (ImageButton) findViewById(R.id.imageButton2);
             button3.setImageResource(android.R.drawable.checkbox_on_background);
             TextView button4 = (TextView) findViewById(R.id.button2);
