@@ -26,7 +26,7 @@ public class AchievmentsActivity extends MainActivity {
             button2.setText("Юный Химик");
             button2.setBackgroundColor(0xFFAFF36B);
         }
-        if (j >= 100) {
+        if (j >= 2) {
             ImageButton button3 = (ImageButton) findViewById(R.id.imageButton2);
             button3.setImageResource(android.R.drawable.checkbox_on_background);
             TextView button4 = (TextView) findViewById(R.id.button2);
