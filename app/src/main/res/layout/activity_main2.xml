@@ -36,4 +36,13 @@
         android:text="Выбери Элемент"
         android:textAllCaps="false"/>
 
+    <Button
+        android:id="@+id/bin22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bin21"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:text= "Результат" />
+
 </RelativeLayout>
