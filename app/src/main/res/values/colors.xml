@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#4981dc</color>
+    <color name="colorPrimary">#91a8cf</color>
     <color name="colorPrimaryDark">#303f9f</color>
     <color name="colorAccent">#FF4081</color>
     <color name="button">#aaddf1</color>
@@ -10,4 +10,5 @@
     <color name="backg">#b2f6a8</color>
     <color name="name">#065dce</color>
     <color name="backachiv">#fcfbe3</color>
+    <color name="result">#836ec8</color>
 </resources>
