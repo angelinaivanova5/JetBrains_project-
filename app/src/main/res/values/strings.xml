@@ -1,15 +1,6 @@
 <resources>
     <string name="app_name">Chemistry</string>
     <string name="achbutt1">Достижение заблокировано</string>
-    <string name="achbutt2">Достижение заблокировано</string>
-    <string name="achbutt3">Достижение заблокировано</string>
-    <string name="achbutt4">Достижение заблокировано</string>
-    <string name="achbutt5">Достижение заблокировано</string>
-    <string name="achbutt6">Достижение заблокировано</string>
-    <string name="achbutt7">Достижение заблокировано</string>
-    <string name="achbutt8">Достижение заблокировано</string>
-    <string name="achbutt9">Достижение заблокировано</string>
-    <string name="achbutt10">Достижение заблокировано</string>
     <string name="belem1">C</string>
     <string name="belem2">O2</string>
     <string name="belem3">Na</string>
@@ -23,4 +14,17 @@
     <string name="belem11">Zn</string>
     <string name="belem12">Fe</string>
     <string name="baza">База элементов</string>
+    <string name="lock">Locked</string>
+    <string name="C">Углерод: Порядковый номер - 6, атомная масса - 12.0107</string>
+    <string name="S">Сера: Порядковый номер - 16, атомная масса - 32.059</string>
+    <string name="О2">Кислород: Порядковый номер - 8, атомная масса - 15.999</string>
+    <string name="Na">Натрий: Порядковый номер - 11, атомная масса - 22.989</string>
+    <string name="Cl">Хлор: Порядковый номер - 17, атомная масса - 35.446</string>
+    <string name="H">Водород: Порядковый номер - 1, атомная масса - 1.008</string>
+    <string name="Mg">Магний: Порядковый номер - 12, атомная масса - 24.305</string>
+    <string name="Аl">Алюминий: Порядковый номер - 13, атомная масса - 26.982</string>
+    <string name="Cu">Медь: Порядковый номер - 29, атомная масса - 63.546</string>
+    <string name="Cа">Кальций: Порядковый номер - 20, атомная масса - 40.078</string>
+    <string name="Zn">Цинк: Порядковый номер - 30, атомная масса - 65.38</string>
+    <string name="Fe">Железо: Порядковый номер - 26, атомная масса - 55.845</string>
 </resources>
