@@ -18,7 +18,7 @@ public class Main4Activity extends AppCompatActivity {
             public void onClick(View v) {
                 switch (v.getId()) {
                     case R.id.bin5:
-                        Intent intent = new Intent(this_, Main2Activity.class);
+                        Intent intent = new Intent(this_, GameScreen.class);
                         Button button1 = (Button) findViewById(R.id.bin5);
                         intent.putExtra("kek", button1.getText().toString());
                         startActivity(intent);

@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 j++;
-                Intent intent = new Intent(this_, Main2Activity.class);
+                Intent intent = new Intent(this_, GameScreen.class);
                 startActivity(intent);
             }
         };

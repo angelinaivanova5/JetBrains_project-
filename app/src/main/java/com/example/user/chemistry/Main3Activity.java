@@ -1,32 +1,63 @@
 package com.example.user.chemistry;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
 import com.example.user.myapplication.R;
 public class Main3Activity extends AppCompatActivity {
+    SharedPreferences Pref1;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
+        Button button11 = (Button) findViewById(R.id.bin16);
+        String a1 = button11.getText().toString();
+        Pref1 = PreferenceManager.getDefaultSharedPreferences(this);
+        String text1= Pref1.getString("H2O" , "");
+        if (a1.equals("Locked")) {
+            if (!text1.equals("")){
+                button11.setText("H2O");
+            }
+        }
+        Button button12 = (Button) findViewById(R.id.bin17);
+        String a2 = button12.getText().toString();
+        String text2= Pref1.getString("SO2" , "");
+        if (a2.equals("Locked")) {
+            if (!text2.equals("")){
+                button12.setText("SO2");
+            }
+        }
+        Button button13 = (Button) findViewById(R.id.bin18);
+        String a3 = button13.getText().toString();
+        String text3= Pref1.getString("HCl" , "");
+        if (a3.equals("Locked")) {
+            if (!text3.equals("")){
+                button13.setText("HCl");
+            }
+        }
+        Button button14 = (Button) findViewById(R.id.bin19);
+        String a4 = button14.getText().toString();
+        String text4= Pref1.getString("MgO" , "");
+        if (a4.equals("Locked")) {
+            if (!text4.equals("")){
+                button14.setText("MgO");
+            }
+        }
         final Button button = (Button) findViewById(R.id.bin5);
         final Main3Activity this_ = this;
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch (v.getId()) {
-                    case R.id.bin5:
-                        Intent intent = new Intent(this_, Main2Activity.class);
-                        intent.putExtra("lol", button.getText().toString());
+                Intent intent = new Intent(this_, GameScreen.class);
+                intent.putExtra("lol", button.getText().toString());
 
-                        setResult(RESULT_OK, intent);
-                        finish();
-                        break;
-                    default:
-                        break;
-                }
+                setResult(RESULT_OK, intent);
+                finish();
             }
         };
         button.setOnClickListener(listener);
@@ -34,16 +65,10 @@ public class Main3Activity extends AppCompatActivity {
         View.OnClickListener listener1 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch (v.getId()) {
-                    case R.id.bin6:
-                        Intent intent = new Intent(this_, Main2Activity.class);
+                        Intent intent = new Intent(this_, GameScreen.class);
                         intent.putExtra("lol", button1.getText().toString());
                         setResult(RESULT_OK, intent);
                         finish();
-                        break;
-                    default:
-                        break;
-                }
             }
         };
         button1.setOnClickListener(listener1);
@@ -51,16 +76,10 @@ public class Main3Activity extends AppCompatActivity {
         View.OnClickListener listener2 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch (v.getId()) {
-                    case R.id.bin7:
-                        Intent intent = new Intent(this_, Main2Activity.class);
+                        Intent intent = new Intent(this_, GameScreen.class);
                         intent.putExtra("lol", button2.getText().toString());
                         setResult(RESULT_OK, intent);
                         finish();
-                        break;
-                    default:
-                        break;
-                }
             }
         };
         button2.setOnClickListener(listener2);
@@ -68,16 +87,10 @@ public class Main3Activity extends AppCompatActivity {
         View.OnClickListener listener3 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch (v.getId()) {
-                    case R.id.bin8:
-                        Intent intent1 = new Intent(this_, Main2Activity.class);
+                        Intent intent1 = new Intent(this_, GameScreen.class);
                         intent1.putExtra("lol", button3.getText().toString());
                         setResult(RESULT_OK, intent1);
                         finish();
-                        break;
-                    default:
-                        break;
-                }
             }
         };
         button3.setOnClickListener(listener3);
@@ -85,16 +98,10 @@ public class Main3Activity extends AppCompatActivity {
         View.OnClickListener listener4 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch (v.getId()) {
-                    case R.id.bin9:
-                        Intent intent1 = new Intent(this_, Main2Activity.class);
+                        Intent intent1 = new Intent(this_, GameScreen.class);
                         intent1.putExtra("lol", button4.getText().toString());
                         setResult(RESULT_OK, intent1);
                         finish();
-                        break;
-                    default:
-                        break;
-                }
             }
         };
         button4.setOnClickListener(listener4);
@@ -102,16 +109,10 @@ public class Main3Activity extends AppCompatActivity {
         View.OnClickListener listener5 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch (v.getId()) {
-                    case R.id.bin10:
-                        Intent intent1 = new Intent(this_, Main2Activity.class);
+                        Intent intent1 = new Intent(this_, GameScreen.class);
                         intent1.putExtra("lol", button5.getText().toString());
                         setResult(RESULT_OK, intent1);
                         finish();
-                        break;
-                    default:
-                        break;
-                }
             }
         };
         button5.setOnClickListener(listener5);
@@ -119,16 +120,10 @@ public class Main3Activity extends AppCompatActivity {
         View.OnClickListener listener6 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch (v.getId()) {
-                    case R.id.bin11:
-                        Intent intent1 = new Intent(this_, Main2Activity.class);
+                        Intent intent1 = new Intent(this_, GameScreen.class);
                         intent1.putExtra("lol", button6.getText().toString());
                         setResult(RESULT_OK, intent1);
                         finish();
-                        break;
-                    default:
-                        break;
-                }
             }
         };
         button6.setOnClickListener(listener6);
@@ -136,16 +131,10 @@ public class Main3Activity extends AppCompatActivity {
         View.OnClickListener listener7 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch (v.getId()) {
-                    case R.id.bin12:
-                        Intent intent1 = new Intent(this_, Main2Activity.class);
+                        Intent intent1 = new Intent(this_, GameScreen.class);
                         intent1.putExtra("lol", button7.getText().toString());
                         setResult(RESULT_OK, intent1);
                         finish();
-                        break;
-                    default:
-                        break;
-                }
             }
         };
         button7.setOnClickListener(listener7);
@@ -153,16 +142,10 @@ public class Main3Activity extends AppCompatActivity {
         View.OnClickListener listener8 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch (v.getId()) {
-                    case R.id.bin13:
-                        Intent intent1 = new Intent(this_, Main2Activity.class);
+                        Intent intent1 = new Intent(this_, GameScreen.class);
                         intent1.putExtra("lol", button8.getText().toString());
                         setResult(RESULT_OK, intent1);
                         finish();
-                        break;
-                    default:
-                        break;
-                }
             }
         };
         button8.setOnClickListener(listener8);
@@ -170,16 +153,10 @@ public class Main3Activity extends AppCompatActivity {
         View.OnClickListener listener9 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch (v.getId()) {
-                    case R.id.bin14:
-                        Intent intent1 = new Intent(this_, Main2Activity.class);
+                        Intent intent1 = new Intent(this_, GameScreen.class);
                         intent1.putExtra("lol", button9.getText().toString());
                         setResult(RESULT_OK, intent1);
                         finish();
-                        break;
-                    default:
-                        break;
-                }
             }
         };
         button9.setOnClickListener(listener9);
@@ -187,19 +164,27 @@ public class Main3Activity extends AppCompatActivity {
         View.OnClickListener listener10 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch (v.getId()) {
-                    case R.id.bin15:
-                        Intent intent1 = new Intent(this_, Main2Activity.class);
+                        Intent intent1 = new Intent(this_, GameScreen.class);
                         intent1.putExtra("lol", button10.getText().toString());
                         setResult(RESULT_OK, intent1);
                         finish();
-                        break;
-                    default:
-                        break;
-                }
             }
         };
         button10.setOnClickListener(listener10);
+        final Button button111 = (Button) findViewById(R.id.bin18);
+        View.OnClickListener listener111 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                        String b = button111.getText().toString();
+                        if (!b.equals("Locked")) {
+                            Intent intent1 = new Intent(this_, GameScreen.class);
+                            intent1.putExtra("lol", button111.getText().toString());
+                            setResult(RESULT_OK, intent1);
+                            finish();
+                }
+            }
+        };
+        button111.setOnClickListener(listener111);
 
     }
 }

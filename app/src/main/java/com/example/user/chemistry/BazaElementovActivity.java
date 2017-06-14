@@ -41,6 +41,10 @@ import com.example.user.myapplication.R;
                   public void onClick(View v) {
                       Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.S), Toast.LENGTH_LONG);
                       toast.setGravity(Gravity.CENTER, 0,160);
+                      LinearLayout toastContainer = (LinearLayout) toast.getView();
+                      ImageView catImageView = new ImageView(getApplicationContext());
+                      catImageView.setImageResource(R.drawable.shrek);
+                      toastContainer.addView(catImageView, 0);
                       toast.show();
 
                   }
@@ -53,6 +57,10 @@ import com.example.user.myapplication.R;
                   public void onClick(View v) {
                       Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.О2), Toast.LENGTH_LONG);
                       toast.setGravity(Gravity.CENTER, 0,160);
+                      LinearLayout toastContainer = (LinearLayout) toast.getView();
+                      ImageView catImageView = new ImageView(getApplicationContext());
+                      catImageView.setImageResource(R.drawable.kislorod);
+                      toastContainer.addView(catImageView, 0);
                       toast.show();
 
                   }
