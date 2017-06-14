@@ -6,55 +6,49 @@
 
     <Button
         android:id="@+id/bin20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="220dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginStart="80dp"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
         android:backgroundTint="@color/colorPrimary"
         android:text=""
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:layout_above="@+id/bin22"
+        android:layout_marginLeft="50dp"/>
 
     <Button
         android:id="@+id/bin21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/bin20"
-        android:layout_marginLeft="65dp"
-        android:layout_marginStart="65dp"
-        android:layout_toEndOf="@+id/bin20"
-        android:layout_toRightOf="@+id/bin20"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
         android:backgroundTint="@color/colorPrimary"
         android:text=""
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="250dp"/>
 
     <Button
         android:id="@+id/bin4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/bin21"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="100dp"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
         android:backgroundTint="@color/button"
         android:text="Выбери Элемент"
         android:textAllCaps="false"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/bin22"
+        android:layout_alignStart="@+id/bin22"
+        android:layout_marginTop="105dp" />
 
     <Button
         android:id="@+id/bin22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
         android:layout_below="@+id/bin21"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:backgroundTint="@color/result"
         android:text="Результат"
         android:textAllCaps="false"
-        android:textSize="18sp"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
 </RelativeLayout>

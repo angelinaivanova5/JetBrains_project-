@@ -11,13 +11,13 @@ public class Main3Activity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
-        final Button button = (Button) findViewById(R.id.bin5);
+        final Button button = (Button) findViewById(R.id.bin7);
         final Main3Activity this_ = this;
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (v.getId()) {
-                    case R.id.bin5:
+                    case R.id.bin7:
                         Intent intent = new Intent(this_, Main2Activity.class);
                         intent.putExtra("lol", button.getText().toString());
 
@@ -47,12 +47,12 @@ public class Main3Activity extends AppCompatActivity {
             }
         };
         button1.setOnClickListener(listener1);
-        final Button button2 = (Button) findViewById(R.id.bin7);
+        final Button button2 = (Button) findViewById(R.id.bin9);
         View.OnClickListener listener2 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (v.getId()) {
-                    case R.id.bin7:
+                    case R.id.bin9:
                         Intent intent = new Intent(this_, Main2Activity.class);
                         intent.putExtra("lol", button2.getText().toString());
                         setResult(RESULT_OK, intent);
@@ -64,12 +64,12 @@ public class Main3Activity extends AppCompatActivity {
             }
         };
         button2.setOnClickListener(listener2);
-        final Button button3 = (Button) findViewById(R.id.bin8);
+        final Button button3 = (Button) findViewById(R.id.bin10);
         View.OnClickListener listener3 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (v.getId()) {
-                    case R.id.bin8:
+                    case R.id.bin10:
                         Intent intent1 = new Intent(this_, Main2Activity.class);
                         intent1.putExtra("lol", button3.getText().toString());
                         setResult(RESULT_OK, intent1);
@@ -81,12 +81,12 @@ public class Main3Activity extends AppCompatActivity {
             }
         };
         button3.setOnClickListener(listener3);
-        final Button button4 = (Button) findViewById(R.id.bin9);
+        final Button button4 = (Button) findViewById(R.id.bin8);
         View.OnClickListener listener4 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (v.getId()) {
-                    case R.id.bin9:
+                    case R.id.bin8:
                         Intent intent1 = new Intent(this_, Main2Activity.class);
                         intent1.putExtra("lol", button4.getText().toString());
                         setResult(RESULT_OK, intent1);
@@ -98,12 +98,12 @@ public class Main3Activity extends AppCompatActivity {
             }
         };
         button4.setOnClickListener(listener4);
-        final Button button5 = (Button) findViewById(R.id.bin10);
+        final Button button5 = (Button) findViewById(R.id.bin12);
         View.OnClickListener listener5 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (v.getId()) {
-                    case R.id.bin10:
+                    case R.id.bin12:
                         Intent intent1 = new Intent(this_, Main2Activity.class);
                         intent1.putExtra("lol", button5.getText().toString());
                         setResult(RESULT_OK, intent1);
@@ -132,12 +132,12 @@ public class Main3Activity extends AppCompatActivity {
             }
         };
         button6.setOnClickListener(listener6);
-        final Button button7 = (Button) findViewById(R.id.bin12);
+        final Button button7 = (Button) findViewById(R.id.bin14);
         View.OnClickListener listener7 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (v.getId()) {
-                    case R.id.bin12:
+                    case R.id.bin14:
                         Intent intent1 = new Intent(this_, Main2Activity.class);
                         intent1.putExtra("lol", button7.getText().toString());
                         setResult(RESULT_OK, intent1);
@@ -166,12 +166,12 @@ public class Main3Activity extends AppCompatActivity {
             }
         };
         button8.setOnClickListener(listener8);
-        final Button button9 = (Button) findViewById(R.id.bin14);
+        final Button button9 = (Button) findViewById(R.id.bin15);
         View.OnClickListener listener9 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (v.getId()) {
-                    case R.id.bin14:
+                    case R.id.bin15:
                         Intent intent1 = new Intent(this_, Main2Activity.class);
                         intent1.putExtra("lol", button9.getText().toString());
                         setResult(RESULT_OK, intent1);
@@ -183,12 +183,12 @@ public class Main3Activity extends AppCompatActivity {
             }
         };
         button9.setOnClickListener(listener9);
-        final Button button10 = (Button) findViewById(R.id.bin15);
+        final Button button10 = (Button) findViewById(R.id.bin5);
         View.OnClickListener listener10 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (v.getId()) {
-                    case R.id.bin15:
+                    case R.id.bin5:
                         Intent intent1 = new Intent(this_, Main2Activity.class);
                         intent1.putExtra("lol", button10.getText().toString());
                         setResult(RESULT_OK, intent1);
@@ -200,6 +200,22 @@ public class Main3Activity extends AppCompatActivity {
             }
         };
         button10.setOnClickListener(listener10);
-
+        final Button button11 = (Button) findViewById(R.id.bin16);
+        View.OnClickListener listener11 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()) {
+                    case R.id.bin16:
+                        Intent intent1 = new Intent(this_, Main2Activity.class);
+                        intent1.putExtra("lol", button10.getText().toString());
+                        setResult(RESULT_OK, intent1);
+                        finish();
+                        break;
+                    default:
+                        break;
+                }
+            }
+        };
+        button11.setOnClickListener(listener11);
     }
 }
