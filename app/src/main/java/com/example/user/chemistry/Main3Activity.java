@@ -15,7 +15,7 @@ public class Main3Activity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
-        Button button11 = (Button) findViewById(R.id.bin16);
+        Button button11 = (Button) findViewById(R.id.bin20);
         String a1 = button11.getText().toString();
         Pref1 = PreferenceManager.getDefaultSharedPreferences(this);
         String text1= Pref1.getString("H2O" , "");

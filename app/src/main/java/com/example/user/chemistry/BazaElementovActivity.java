@@ -23,14 +23,7 @@ import com.example.user.myapplication.R;
 
                   @Override
                   public void onClick(View v) {
-                      Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.C), Toast.LENGTH_LONG);
-                      toast.setGravity(Gravity.CENTER, 0,160);
-                      LinearLayout toastContainer = (LinearLayout) toast.getView();
-                      ImageView C1 = new ImageView(getApplicationContext());
-                      C1.setImageResource(R.drawable.coal_anthracite);
-                      toastContainer.addView(C1, 0);
-                      toast.show();
-
+                      showElementInfo(getString(R.string.C), R.drawable.coal_anthracite);
                   }
               });
 
@@ -39,13 +32,7 @@ import com.example.user.myapplication.R;
 
                   @Override
                   public void onClick(View v) {
-                      Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.S), Toast.LENGTH_LONG);
-                      toast.setGravity(Gravity.CENTER, 0,160);
-                      LinearLayout toastContainer = (LinearLayout) toast.getView();
-                      ImageView S1 = new ImageView(getApplicationContext());
-                      S1.setImageResource(R.drawable.sera);
-                      toastContainer.addView(S1, 0);
-                      toast.show();
+                      showElementInfo(getString(R.string.S), R.drawable.sera);
 
                   }
               });
@@ -55,13 +42,7 @@ import com.example.user.myapplication.R;
 
                   @Override
                   public void onClick(View v) {
-                      Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.О2), Toast.LENGTH_LONG);
-                      toast.setGravity(Gravity.CENTER, 0,160);
-                      LinearLayout toastContainer = (LinearLayout) toast.getView();
-                      ImageView O2 = new ImageView(getApplicationContext());
-                      O2.setImageResource(R.drawable.kislorod);
-                      toastContainer.addView(O2, 0);
-                      toast.show();
+                      showElementInfo(getString(R.string.О2), R.drawable.kislorod);
 
                   }
               });
@@ -71,13 +52,7 @@ import com.example.user.myapplication.R;
 
                   @Override
                   public void onClick(View v) {
-                      Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.Na), Toast.LENGTH_LONG);
-                      toast.setGravity(Gravity.CENTER, 0,160);
-                      LinearLayout toastContainer = (LinearLayout) toast.getView();
-                      ImageView Na1 = new ImageView(getApplicationContext());
-                      Na1.setImageResource(R.drawable.natrium2);
-                      toastContainer.addView(Na1, 0);
-                      toast.show();
+                      showElementInfo(getString(R.string.Na), R.drawable.natrium2);
 
                   }
               });
@@ -88,13 +63,7 @@ import com.example.user.myapplication.R;
 
                   @Override
                   public void onClick(View v) {
-                      Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.Cl), Toast.LENGTH_LONG);
-                      toast.setGravity(Gravity.CENTER, 0,160);
-                      LinearLayout toastContainer = (LinearLayout) toast.getView();
-                      ImageView Cl1 = new ImageView(getApplicationContext());
-                      Cl1.setImageResource(R.drawable.clor);
-                      toastContainer.addView(Cl1, 0);
-                      toast.show();
+                      showElementInfo(getString(R.string.Cl), R.drawable.clor);
 
                   }
               });
@@ -104,13 +73,7 @@ import com.example.user.myapplication.R;
 
                   @Override
                   public void onClick(View v) {
-                      Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.H), Toast.LENGTH_LONG);
-                      toast.setGravity(Gravity.CENTER, 0,160);
-                      LinearLayout toastContainer = (LinearLayout) toast.getView();
-                      ImageView H2 = new ImageView(getApplicationContext());
-                      H2.setImageResource(R.drawable.vodorod);
-                      toastContainer.addView(H2, 0);
-                      toast.show();
+                      showElementInfo(getString(R.string.H), R.drawable.vodorod);
 
                   }
               });
@@ -120,13 +83,7 @@ import com.example.user.myapplication.R;
 
                   @Override
                   public void onClick(View v) {
-                      Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.Mg), Toast.LENGTH_LONG);
-                      toast.setGravity(Gravity.CENTER, 0,160);
-                      LinearLayout toastContainer = (LinearLayout) toast.getView();
-                      ImageView Mg1 = new ImageView(getApplicationContext());
-                      Mg1.setImageResource(R.drawable.magnij);
-                      toastContainer.addView(Mg1, 0);
-                      toast.show();
+                      showElementInfo(getString(R.string.Mg), R.drawable.magnij);
 
                   }
               });
@@ -136,13 +93,7 @@ import com.example.user.myapplication.R;
 
                   @Override
                   public void onClick(View v) {
-                      Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.Аl), Toast.LENGTH_LONG);
-                      toast.setGravity(Gravity.CENTER, 0,160);
-                      LinearLayout toastContainer = (LinearLayout) toast.getView();
-                      ImageView Al1 = new ImageView(getApplicationContext());
-                      Al1.setImageResource(R.drawable.aluminium);
-                      toastContainer.addView(Al1, 0);
-                      toast.show();
+                      showElementInfo(getString(R.string.Аl), R.drawable.aluminium);
 
                   }
               });
@@ -152,13 +103,7 @@ import com.example.user.myapplication.R;
 
                   @Override
                   public void onClick(View v) {
-                      Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.Cu), Toast.LENGTH_LONG);
-                      toast.setGravity(Gravity.CENTER, 0,160);
-                      LinearLayout toastContainer = (LinearLayout) toast.getView();
-                      ImageView Cu1 = new ImageView(getApplicationContext());
-                      Cu1.setImageResource(R.drawable.med2);
-                      toastContainer.addView(Cu1, 0);
-                      toast.show();
+                      showElementInfo(getString(R.string.Cu), R.drawable.med2);
 
                   }
               });
@@ -168,13 +113,7 @@ import com.example.user.myapplication.R;
 
                   @Override
                   public void onClick(View v) {
-                      Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.Cа), Toast.LENGTH_LONG);
-                      toast.setGravity(Gravity.CENTER, 0,160);
-                      LinearLayout toastContainer = (LinearLayout) toast.getView();
-                      ImageView Ca1 = new ImageView(getApplicationContext());
-                      Ca1.setImageResource(R.drawable.calz);
-                      toastContainer.addView(Ca1, 0);
-                      toast.show();
+                      showElementInfo(getString(R.string.Cа), R.drawable.calz);
 
                   }
               });
@@ -184,13 +123,7 @@ import com.example.user.myapplication.R;
 
                   @Override
                   public void onClick(View v) {
-                      Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.Zn), Toast.LENGTH_LONG);
-                      toast.setGravity(Gravity.CENTER, 0,160);
-                      LinearLayout toastContainer = (LinearLayout) toast.getView();
-                      ImageView Zn1 = new ImageView(getApplicationContext());
-                      Zn1.setImageResource(R.drawable.zink2);
-                      toastContainer.addView(Zn1, 0);
-                      toast.show();
+                      showElementInfo(getString(R.string.Zn), R.drawable.zink2);
 
                   }
               });
@@ -200,17 +133,28 @@ import com.example.user.myapplication.R;
 
                   @Override
                   public void onClick(View v) {
-                      Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.Fe), Toast.LENGTH_LONG);
-                      toast.setGravity(Gravity.CENTER, 0,160);
-                      LinearLayout toastContainer = (LinearLayout) toast.getView();
-                      ImageView Fe1 = new ImageView(getApplicationContext());
-                      Fe1.setImageResource(R.drawable.ferum);
-                      toastContainer.addView(Fe1, 0);
-                      toast.show();
+                      showElementInfo(getString(R.string.Fe), R.drawable.ferum);
 
                   }
               });
 
 
+          }
+
+          private Toast oldToast = null;
+
+          private void showElementInfo(String name, int image) {
+
+              if (oldToast != null) {
+                  oldToast.cancel();
+              }
+
+              oldToast = Toast.makeText(BazaElementovActivity.this, name, Toast.LENGTH_LONG);
+              oldToast.setGravity(Gravity.CENTER, 0, 160);
+              LinearLayout toastContainer = (LinearLayout) oldToast.getView();
+              ImageView C1 = new ImageView(getApplicationContext());
+              C1.setImageResource(image);
+              toastContainer.addView(C1, 0);
+              oldToast.show();
           }
       };
