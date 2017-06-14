@@ -33,7 +33,7 @@ public class Main2Activity extends AppCompatActivity {
             }
         };
         button.setOnClickListener(listener);
-        int amm = 15;
+        int amm = 16;
         final String[][] res = new String[amm][amm];
         final Boolean[][] boolres = new Boolean[amm][amm];
         for (int i=0;i<amm;i++){
@@ -92,8 +92,8 @@ public class Main2Activity extends AppCompatActivity {
         final Map <String, Integer> elements= new HashMap<>();
         elements.put("O2",1);
         elements.put("S",2);
-        elements.put("Cl",3);
-        elements.put("H",4);
+        elements.put("Cl2",3);
+        elements.put("H2",4);
         elements.put("Na",5);
         elements.put("Al",6);
         elements.put("Mg",7);
@@ -101,6 +101,7 @@ public class Main2Activity extends AppCompatActivity {
         elements.put("Cu",9);
         elements.put("Zn",10);
         elements.put("C",11);
+        elements.put("Fe",12);
 
         final Button button1 = (Button) findViewById(R.id.bin22);
         View.OnClickListener listener1 = new View.OnClickListener() {
