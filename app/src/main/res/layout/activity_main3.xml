@@ -9,7 +9,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="10dp"
-        android:text="O2" />
+        android:text="O2"
+        android:textAllCaps="false"/>
     <Button
         android:id="@+id/bin6"
         android:layout_width="wrap_content"
@@ -17,7 +18,8 @@
         android:layout_below="@id/bin5"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
-        android:text="S" />
+        android:text="S"
+        android:textAllCaps="false"/>
     <Button
         android:id="@+id/bin7"
         android:layout_width="wrap_content"
@@ -25,7 +27,8 @@
         android:layout_below="@id/bin6"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
-        android:text="Cl" />
+        android:text="Cl"
+        android:textAllCaps="false"/>
     <Button
         android:id="@+id/bin8"
         android:layout_width="wrap_content"
@@ -33,7 +36,8 @@
         android:layout_below="@id/bin7"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
-        android:text="H" />
+        android:text="H"
+        android:textAllCaps="false"/>
     <Button
         android:id="@+id/bin9"
         android:layout_width="wrap_content"
@@ -41,7 +45,8 @@
         android:layout_below="@id/bin8"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
-        android:text="Locked" />
+        android:text="Na"
+        android:textAllCaps="false"/>
     <Button
         android:id="@+id/bin10"
         android:layout_width="wrap_content"
@@ -49,7 +54,8 @@
         android:layout_toRightOf="@id/bin5"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:text="Locked" />
+        android:text="Al"
+        android:textAllCaps="false"/>
     <Button
         android:id="@+id/bin11"
         android:layout_width="wrap_content"
@@ -58,7 +64,8 @@
         android:layout_marginLeft="10dp"
         android:layout_below="@id/bin5"
         android:layout_marginTop="50dp"
-        android:text="Locked" />
+        android:text="Mg"
+        android:textAllCaps="false"/>
     <Button
         android:id="@+id/bin12"
         android:layout_width="wrap_content"
@@ -67,7 +74,8 @@
         android:layout_marginLeft="10dp"
         android:layout_below="@id/bin6"
         android:layout_marginTop="50dp"
-        android:text="Locked" />
+        android:text="Ca"
+        android:textAllCaps="false"/>
     <Button
         android:id="@+id/bin13"
         android:layout_width="wrap_content"
@@ -76,7 +84,8 @@
         android:layout_marginLeft="10dp"
         android:layout_below="@id/bin7"
         android:layout_marginTop="50dp"
-        android:text="Locked" />
+        android:text="Cu"
+        android:textAllCaps="false"/>
     <Button
         android:id="@+id/bin14"
         android:layout_width="wrap_content"
@@ -85,7 +94,8 @@
         android:layout_marginLeft="10dp"
         android:layout_below="@id/bin8"
         android:layout_marginTop="50dp"
-        android:text="Locked" />
+        android:text="Zn"
+        android:textAllCaps="false"/>
     <Button
         android:id="@+id/bin15"
         android:layout_width="wrap_content"
@@ -93,7 +103,8 @@
         android:layout_toRightOf="@id/bin10"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:text="Locked" />
+        android:text="C"
+        android:textAllCaps="false"/>
     <Button
         android:id="@+id/bin16"
         android:layout_width="wrap_content"
@@ -102,7 +113,8 @@
         android:layout_marginLeft="10dp"
         android:layout_below="@id/bin15"
         android:layout_marginTop="50dp"
-        android:text="Locked" />
+        android:text="Locked"
+        android:textAllCaps="false"/>
     <Button
         android:id="@+id/bin17"
         android:layout_width="wrap_content"
@@ -111,7 +123,8 @@
         android:layout_marginLeft="10dp"
         android:layout_below="@id/bin16"
         android:layout_marginTop="50dp"
-        android:text="Locked" />
+        android:text="Locked"
+        android:textAllCaps="false" />
     <Button
         android:id="@+id/bin18"
         android:layout_width="wrap_content"
@@ -120,7 +133,8 @@
         android:layout_marginLeft="10dp"
         android:layout_below="@id/bin17"
         android:layout_marginTop="50dp"
-        android:text="Locked" />
+        android:text="Locked"
+        android:textAllCaps="false"/>
     <Button
         android:id="@+id/bin19"
         android:layout_width="wrap_content"
@@ -129,5 +143,6 @@
         android:layout_marginLeft="10dp"
         android:layout_below="@id/bin18"
         android:layout_marginTop="50dp"
-        android:text="Locked" />
+        android:text="Locked"
+        android:textAllCaps="false"/>
 </RelativeLayout>
