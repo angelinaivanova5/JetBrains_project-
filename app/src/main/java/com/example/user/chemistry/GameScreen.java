@@ -4,7 +4,9 @@ package com.example.user.chemistry;
 import java.util.HashMap;
 import java.util.Map;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -13,18 +15,25 @@ import android.widget.TextView;
 
 import com.example.user.myapplication.R;
 
-public class Main2Activity extends AppCompatActivity {
+public class GameScreen extends AppCompatActivity {
+    /*boolean k1=false,k2=false,k3=false,k4=false,k5=false;*/
+    SharedPreferences Pref1;
 
     public static final int SELECT_ELEMENT_TASK = 1;
 
-    private int[] buttonIds = {R.id.bin1, R.id.bin2};
+    /*private int[] buttonIds = {R.id.bin1, R.id.bin2};*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        Pref1 = PreferenceManager.getDefaultSharedPreferences(this);
+
+        /*Pref1.edit().clear().apply();*/
+
+        final SharedPreferences.Editor editor = Pref1.edit();
         final Button button = (Button) findViewById(R.id.bin4);
-        final Main2Activity this_ = this;
+        final GameScreen this_ = this;
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -114,11 +123,27 @@ public class Main2Activity extends AppCompatActivity {
                 if ((!a.equals(""))&&(!b.equals(""))){
                     int number1 = elements.get(a);
                     int number2 = elements.get(b);
-                    if (boolres[number1][number2]){
+                    if (boolres[number1][number2]) {
                         button1.setText(res[number1][number2]);
                         button11.setText("");
                         button12.setText("");
-                    } else {
+
+                        /*if (res[number1][number2].equals("HCl")) {
+                            k1 = true;
+                        }*/
+                            editor.putString(button1.getText().toString(), button1.getText().toString());
+                            editor.commit();
+                        /*Button buttontest = (Button) findViewById(R.id.bin22);
+                        View.OnClickListener listenertest = new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Intent intent = new Intent(GameScreen.this, Main3Activity.class);
+                                intent.putExtra("Ar", k1);
+                                startActivity(intent);
+                            }
+                        };
+                            buttontest.setOnClickListener(listenertest);*/
+                    }else {
                         button1.setText("Реакция не идет");
                         button11.setText("");
                         button12.setText("");
