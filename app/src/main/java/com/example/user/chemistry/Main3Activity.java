@@ -171,7 +171,7 @@ public class Main3Activity extends AppCompatActivity {
             }
         };
         button10.setOnClickListener(listener10);
-        final Button button111 = (Button) findViewById(R.id.bin18);
+        final Button button111 = (Button) findViewById(R.id.bin16);
         View.OnClickListener listener111 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -185,6 +185,51 @@ public class Main3Activity extends AppCompatActivity {
             }
         };
         button111.setOnClickListener(listener111);
+
+        final Button button112 = (Button) findViewById(R.id.bin17);
+        View.OnClickListener listener112 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String b = button112.getText().toString();
+                if (!b.equals("Locked")) {
+                    Intent intent1 = new Intent(this_, GameScreen.class);
+                    intent1.putExtra("lol", button112.getText().toString());
+                    setResult(RESULT_OK, intent1);
+                    finish();
+                }
+            }
+        };
+        button112.setOnClickListener(listener112);
+
+        final Button button113 = (Button) findViewById(R.id.bin18);
+        View.OnClickListener listener113 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String b = button113.getText().toString();
+                if (!b.equals("Locked")) {
+                    Intent intent1 = new Intent(this_, GameScreen.class);
+                    intent1.putExtra("lol", button113.getText().toString());
+                    setResult(RESULT_OK, intent1);
+                    finish();
+                }
+            }
+        };
+        button113.setOnClickListener(listener113);
+
+        final Button button114 = (Button) findViewById(R.id.bin19);
+        View.OnClickListener listener114 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String b = button114.getText().toString();
+                if (!b.equals("Locked")) {
+                    Intent intent1 = new Intent(this_, GameScreen.class);
+                    intent1.putExtra("lol", button114.getText().toString());
+                    setResult(RESULT_OK, intent1);
+                    finish();
+                }
+            }
+        };
+        button114.setOnClickListener(listener114);
 
     }
 }
