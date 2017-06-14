@@ -26,9 +26,9 @@ import com.example.user.myapplication.R;
                       Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.C), Toast.LENGTH_LONG);
                       toast.setGravity(Gravity.CENTER, 0,160);
                       LinearLayout toastContainer = (LinearLayout) toast.getView();
-                      ImageView catImageView = new ImageView(getApplicationContext());
-                      catImageView.setImageResource(R.drawable.coal_anthracite);
-                      toastContainer.addView(catImageView, 0);
+                      ImageView C1 = new ImageView(getApplicationContext());
+                      C1.setImageResource(R.drawable.coal_anthracite);
+                      toastContainer.addView(C1, 0);
                       toast.show();
 
                   }
@@ -41,6 +41,10 @@ import com.example.user.myapplication.R;
                   public void onClick(View v) {
                       Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.S), Toast.LENGTH_LONG);
                       toast.setGravity(Gravity.CENTER, 0,160);
+                      LinearLayout toastContainer = (LinearLayout) toast.getView();
+                      ImageView S1 = new ImageView(getApplicationContext());
+                      S1.setImageResource(R.drawable.sera);
+                      toastContainer.addView(S1, 0);
                       toast.show();
 
                   }
@@ -53,6 +57,10 @@ import com.example.user.myapplication.R;
                   public void onClick(View v) {
                       Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.О2), Toast.LENGTH_LONG);
                       toast.setGravity(Gravity.CENTER, 0,160);
+                      LinearLayout toastContainer = (LinearLayout) toast.getView();
+                      ImageView O2 = new ImageView(getApplicationContext());
+                      O2.setImageResource(R.drawable.kislorod);
+                      toastContainer.addView(O2, 0);
                       toast.show();
 
                   }
@@ -65,6 +73,10 @@ import com.example.user.myapplication.R;
                   public void onClick(View v) {
                       Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.Na), Toast.LENGTH_LONG);
                       toast.setGravity(Gravity.CENTER, 0,160);
+                      LinearLayout toastContainer = (LinearLayout) toast.getView();
+                      ImageView Na1 = new ImageView(getApplicationContext());
+                      Na1.setImageResource(R.drawable.natrium2);
+                      toastContainer.addView(Na1, 0);
                       toast.show();
 
                   }
@@ -78,6 +90,10 @@ import com.example.user.myapplication.R;
                   public void onClick(View v) {
                       Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.Cl), Toast.LENGTH_LONG);
                       toast.setGravity(Gravity.CENTER, 0,160);
+                      LinearLayout toastContainer = (LinearLayout) toast.getView();
+                      ImageView Cl1 = new ImageView(getApplicationContext());
+                      Cl1.setImageResource(R.drawable.clor);
+                      toastContainer.addView(Cl1, 0);
                       toast.show();
 
                   }
@@ -90,6 +106,10 @@ import com.example.user.myapplication.R;
                   public void onClick(View v) {
                       Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.H), Toast.LENGTH_LONG);
                       toast.setGravity(Gravity.CENTER, 0,160);
+                      LinearLayout toastContainer = (LinearLayout) toast.getView();
+                      ImageView H2 = new ImageView(getApplicationContext());
+                      H2.setImageResource(R.drawable.vodorod);
+                      toastContainer.addView(H2, 0);
                       toast.show();
 
                   }
@@ -102,6 +122,10 @@ import com.example.user.myapplication.R;
                   public void onClick(View v) {
                       Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.Mg), Toast.LENGTH_LONG);
                       toast.setGravity(Gravity.CENTER, 0,160);
+                      LinearLayout toastContainer = (LinearLayout) toast.getView();
+                      ImageView Mg1 = new ImageView(getApplicationContext());
+                      Mg1.setImageResource(R.drawable.magnij);
+                      toastContainer.addView(Mg1, 0);
                       toast.show();
 
                   }
@@ -114,6 +138,10 @@ import com.example.user.myapplication.R;
                   public void onClick(View v) {
                       Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.Аl), Toast.LENGTH_LONG);
                       toast.setGravity(Gravity.CENTER, 0,160);
+                      LinearLayout toastContainer = (LinearLayout) toast.getView();
+                      ImageView Al1 = new ImageView(getApplicationContext());
+                      Al1.setImageResource(R.drawable.aluminium);
+                      toastContainer.addView(Al1, 0);
                       toast.show();
 
                   }
@@ -126,6 +154,10 @@ import com.example.user.myapplication.R;
                   public void onClick(View v) {
                       Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.Cu), Toast.LENGTH_LONG);
                       toast.setGravity(Gravity.CENTER, 0,160);
+                      LinearLayout toastContainer = (LinearLayout) toast.getView();
+                      ImageView Cu1 = new ImageView(getApplicationContext());
+                      Cu1.setImageResource(R.drawable.med2);
+                      toastContainer.addView(Cu1, 0);
                       toast.show();
 
                   }
@@ -138,6 +170,10 @@ import com.example.user.myapplication.R;
                   public void onClick(View v) {
                       Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.Cа), Toast.LENGTH_LONG);
                       toast.setGravity(Gravity.CENTER, 0,160);
+                      LinearLayout toastContainer = (LinearLayout) toast.getView();
+                      ImageView Ca1 = new ImageView(getApplicationContext());
+                      Ca1.setImageResource(R.drawable.calz);
+                      toastContainer.addView(Ca1, 0);
                       toast.show();
 
                   }
@@ -150,6 +186,10 @@ import com.example.user.myapplication.R;
                   public void onClick(View v) {
                       Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.Zn), Toast.LENGTH_LONG);
                       toast.setGravity(Gravity.CENTER, 0,160);
+                      LinearLayout toastContainer = (LinearLayout) toast.getView();
+                      ImageView Zn1 = new ImageView(getApplicationContext());
+                      Zn1.setImageResource(R.drawable.zink2);
+                      toastContainer.addView(Zn1, 0);
                       toast.show();
 
                   }
@@ -162,6 +202,10 @@ import com.example.user.myapplication.R;
                   public void onClick(View v) {
                       Toast toast =  Toast.makeText(BazaElementovActivity.this, getString(R.string.Fe), Toast.LENGTH_LONG);
                       toast.setGravity(Gravity.CENTER, 0,160);
+                      LinearLayout toastContainer = (LinearLayout) toast.getView();
+                      ImageView Fe1 = new ImageView(getApplicationContext());
+                      Fe1.setImageResource(R.drawable.ferum);
+                      toastContainer.addView(Fe1, 0);
                       toast.show();
 
                   }
