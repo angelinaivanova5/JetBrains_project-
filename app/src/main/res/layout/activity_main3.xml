@@ -1,148 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@android:style/Widget.Holo.Light.ScrollView"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@color/backg">
-    <Button
-        android:id="@+id/bin5"
-        android:layout_width="wrap_content"
+
+    <GridLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="10dp"
-        android:text="O2"
-        android:textAllCaps="false"/>
-    <Button
-        android:id="@+id/bin6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/bin5"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
-        android:text="S"
-        android:textAllCaps="false"/>
-    <Button
-        android:id="@+id/bin7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/bin6"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
-        android:text="Cl"
-        android:textAllCaps="false"/>
-    <Button
-        android:id="@+id/bin8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/bin7"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
-        android:text="H"
-        android:textAllCaps="false"/>
-    <Button
-        android:id="@+id/bin9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/bin8"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
-        android:text="Na"
-        android:textAllCaps="false"/>
-    <Button
-        android:id="@+id/bin10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/bin5"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:text="Al"
-        android:textAllCaps="false"/>
-    <Button
-        android:id="@+id/bin11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/bin6"
-        android:layout_marginLeft="10dp"
-        android:layout_below="@id/bin5"
-        android:layout_marginTop="50dp"
-        android:text="Mg"
-        android:textAllCaps="false"/>
-    <Button
-        android:id="@+id/bin12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/bin7"
-        android:layout_marginLeft="10dp"
-        android:layout_below="@id/bin6"
-        android:layout_marginTop="50dp"
-        android:text="Ca"
-        android:textAllCaps="false"/>
-    <Button
-        android:id="@+id/bin13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/bin8"
-        android:layout_marginLeft="10dp"
-        android:layout_below="@id/bin7"
-        android:layout_marginTop="50dp"
-        android:text="Cu"
-        android:textAllCaps="false"/>
-    <Button
-        android:id="@+id/bin14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/bin9"
-        android:layout_marginLeft="10dp"
-        android:layout_below="@id/bin8"
-        android:layout_marginTop="50dp"
-        android:text="Zn"
-        android:textAllCaps="false"/>
-    <Button
-        android:id="@+id/bin15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/bin10"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:text="C"
-        android:textAllCaps="false"/>
-    <Button
-        android:id="@+id/bin16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/bin11"
-        android:layout_marginLeft="10dp"
-        android:layout_below="@id/bin15"
-        android:layout_marginTop="50dp"
-        android:text="Locked"
-        android:textAllCaps="false"/>
-    <Button
-        android:id="@+id/bin17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/bin12"
-        android:layout_marginLeft="10dp"
-        android:layout_below="@id/bin16"
-        android:layout_marginTop="50dp"
-        android:text="Locked"
-        android:textAllCaps="false" />
-    <Button
-        android:id="@+id/bin18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/bin14"
-        android:layout_marginLeft="10dp"
-        android:layout_below="@id/bin17"
-        android:layout_marginTop="50dp"
-        android:text="Locked"
-        android:textAllCaps="false"/>
-    <Button
-        android:id="@+id/bin19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/bin14"
-        android:layout_marginLeft="10dp"
-        android:layout_below="@id/bin18"
-        android:layout_marginTop="50dp"
-        android:text="Locked"
-        android:textAllCaps="false"/>
-</RelativeLayout>
+        android:columnCount="3">
+
+        <Button
+            android:id="@+id/bin5"
+            android:layout_width="120dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/button"
+            android:text="@string/belem1"
+            android:layout_marginTop="50dp"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bin6"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/button"
+            android:text="@string/belem6"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp" />
+
+        <Button
+            android:id="@+id/bin7"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/button"
+            android:text="@string/belem2"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bin8"
+            android:layout_marginLeft="25dp"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/button"
+            android:text="@string/belem3"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bin9"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/button"
+            android:text="@string/belem4"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bin10"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/button"
+            android:text="@string/belem5"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bin11"
+            android:layout_width="120dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/button"
+            android:text="@string/belem7"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bin12"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/button"
+            android:text="@string/belem8"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bin13"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/button"
+            android:text="@string/belem9"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bin14"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/button"
+            android:text="@string/belem10"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bin15"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/button"
+            android:text="@string/belem11"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bin16"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/button"
+            android:text="@string/belem12"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bin17"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/button"
+            android:text="@string/lock"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bin18"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/button"
+            android:text="@string/lock"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bin19"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/button"
+            android:text="@string/lock"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+    </GridLayout>
+
+
+</ScrollView>
