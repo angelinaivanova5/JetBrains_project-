@@ -29,7 +29,7 @@ public class GameScreen extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         Pref1 = PreferenceManager.getDefaultSharedPreferences(this);
 
-        /*Pref1.edit().clear().apply();*/
+        Pref1.edit().clear().apply();
 
         final SharedPreferences.Editor editor = Pref1.edit();
         final Button button = (Button) findViewById(R.id.bin4);
@@ -98,6 +98,10 @@ public class GameScreen extends AppCompatActivity {
         res[9][1]="CuO";
         boolres[1][9]=true;
         boolres[9][1]=true;
+        res[10][14]="ZnCl2";
+        res[14][10]="ZnCl2";
+        boolres[10][14]=true;
+        boolres[14][10]=true;
         final Map <String, Integer> elements= new HashMap<>();
         elements.put("O2",1);
         elements.put("S",2);
@@ -110,6 +114,10 @@ public class GameScreen extends AppCompatActivity {
         elements.put("Cu",9);
         elements.put("Zn",10);
         elements.put("C",11);
+        elements.put("H2O",12);
+        elements.put("SO2",13);
+        elements.put("HCl",14);
+        elements.put("MgO",15);
 
         final Button button1 = (Button) findViewById(R.id.bin22);
         View.OnClickListener listener1 = new View.OnClickListener() {
