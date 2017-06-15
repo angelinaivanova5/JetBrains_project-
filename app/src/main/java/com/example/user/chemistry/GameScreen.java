@@ -29,7 +29,7 @@ public class GameScreen extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         Pref1 = PreferenceManager.getDefaultSharedPreferences(this);
 
-        Pref1.edit().clear().apply();
+        /*Pref1.edit().clear().apply();*/
 
         final SharedPreferences.Editor editor = Pref1.edit();
         final Button button = (Button) findViewById(R.id.bin4);
@@ -114,6 +114,7 @@ public class GameScreen extends AppCompatActivity {
         elements.put("Cu",9);
         elements.put("Zn",10);
         elements.put("C",11);
+        elements.put("Fe",12);
         elements.put("H2O",12);
         elements.put("SO2",13);
         elements.put("HCl",14);
