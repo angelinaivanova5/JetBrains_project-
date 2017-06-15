@@ -27,4 +27,10 @@
     <string name="Cа">Кальций: Порядковый номер - 20, атомная масса - 40.078</string>
     <string name="Zn">Цинк: Порядковый номер - 30, атомная масса - 65.38</string>
     <string name="Fe">Железо: Порядковый номер - 26, атомная масса - 55.845</string>
+    <string name="H2O">vodichka</string>
+    <string name="SO2">hren s S</string>
+    <string name="HCl">Solianaia</string>
+    <string name="MgO">hren s Mg</string>
+    <string name="CO2">hren s C</string>
+
 </resources>

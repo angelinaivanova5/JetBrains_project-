@@ -22,6 +22,7 @@ public class AchievmentsActivity extends MainActivity {
         setContentView(R.layout.achievments);
         Pref1 = PreferenceManager.getDefaultSharedPreferences(this);
         String text1= Pref1.getString("HCl" , "");
+        String text2= Pref1.getString("Ra1", "");
         Intent intent = getIntent();
         int j = intent.getIntExtra("dd", -1);
         int q = intent.getIntExtra("gq", -1);
@@ -39,6 +40,13 @@ public class AchievmentsActivity extends MainActivity {
             TextView button4 = (TextView) findViewById(R.id.button2);
             button4.setText("Соляная!  Изи!");
             button4.setBackgroundColor(0xFFAFF36B);
+        }
+        if (!text2.equals("")) {
+            ImageButton button5 = (ImageButton) findViewById(R.id.imageButton3);
+            button5.setImageResource(android.R.drawable.checkbox_on_background);
+            TextView button6 = (TextView) findViewById(R.id.button3);
+            button6.setText("Мечта Семена и Екатерины");
+            button6.setBackgroundColor(0xFFAFF36B);
         }
     }
 }

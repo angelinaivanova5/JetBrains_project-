@@ -1,6 +1,8 @@
 package com.example.user.chemistry;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
@@ -12,12 +14,52 @@ import android.widget.Button;
 import com.example.user.myapplication.R;
 
       public class BazaElementovActivity extends AppCompatActivity {
-
+          SharedPreferences Pref1;
           @Override
           protected void onCreate(Bundle savedInstanceState) {
               super.onCreate(savedInstanceState);
-
               setContentView(R.layout.bazaelementov);
+              Pref1 = PreferenceManager.getDefaultSharedPreferences(this);
+              Button button14 = (Button) findViewById(R.id.button29);
+              String a1 = button14.getText().toString();
+              String text1= Pref1.getString("H2O" , "");
+              if (a1.equals("Locked")) {
+                  if (!text1.equals("")){
+                      button14.setText("H2O");
+                  }
+              }
+              Button button15 = (Button) findViewById(R.id.button30);
+              String a2 = button15.getText().toString();
+              String text2= Pref1.getString("SO2" , "");
+              if (a2.equals("Locked")) {
+                  if (!text2.equals("")){
+                      button15.setText("SO2");
+                  }
+              }
+              Button button16 = (Button) findViewById(R.id.button31);
+              String a3 = button16.getText().toString();
+              String text3= Pref1.getString("HCl" , "");
+              if (a3.equals("Locked")) {
+                  if (!text3.equals("")){
+                      button16.setText("HCl");
+                  }
+              }
+              Button button17 = (Button) findViewById(R.id.button32);
+              String a4 = button17.getText().toString();
+              String text4= Pref1.getString("MgO" , "");
+              if (a4.equals("Locked")) {
+                  if (!text4.equals("")){
+                      button17.setText("MgO");
+                  }
+              }
+              Button button18 = (Button) findViewById(R.id.button33);
+              String a5 = button18.getText().toString();
+              String text5 = Pref1.getString("CO2" , "");
+              if (a5.equals("Locked")) {
+                  if (!text5.equals("")){
+                      button18.setText("CO2");
+                  }
+              }
               Button button = (Button) findViewById(R.id.button17);
               button.setOnClickListener(new View.OnClickListener(){
 
@@ -134,6 +176,58 @@ import com.example.user.myapplication.R;
                   @Override
                   public void onClick(View v) {
                       showElementInfo(getString(R.string.Fe), R.drawable.ferum);
+
+                  }
+              });
+              Button button100 = (Button) findViewById(R.id.button29);
+              if (!button100.getText().equals("Locked")) {
+                  button100.setOnClickListener(new View.OnClickListener() {
+
+                      @Override
+                      public void onClick(View v) {
+                          showElementInfo(getString(R.string.H2O), R.drawable.ferum);
+
+                      }
+                  });
+              }
+              Button button101 = (Button) findViewById(R.id.button30);
+              button101.setOnClickListener(new View.OnClickListener(){
+
+                  @Override
+                  public void onClick(View v) {
+                      showElementInfo(getString(R.string.SO2), R.drawable.ferum);
+
+                  }
+              });
+
+              Button button102 = (Button) findViewById(R.id.button31);
+              button102.setOnClickListener(new View.OnClickListener(){
+
+                  @Override
+                  public void onClick(View v) {
+                      showElementInfo(getString(R.string.HCl), R.drawable.ferum);
+
+                  }
+
+
+              });
+
+              Button button103 = (Button) findViewById(R.id.button32);
+              button103.setOnClickListener(new View.OnClickListener(){
+
+                  @Override
+                  public void onClick(View v) {
+                      showElementInfo(getString(R.string.MgO), R.drawable.ferum);
+
+                  }
+              });
+
+              Button button104 = (Button) findViewById(R.id.button33);
+              button104.setOnClickListener(new View.OnClickListener(){
+
+                  @Override
+                  public void onClick(View v) {
+                      showElementInfo(getString(R.string.CO2), R.drawable.ferum);
 
                   }
               });

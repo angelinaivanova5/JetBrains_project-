@@ -16,12 +16,12 @@ import android.widget.TextView;
 import com.example.user.myapplication.R;
 
 public class GameScreen extends AppCompatActivity {
-    /*boolean k1=false,k2=false,k3=false,k4=false,k5=false;*/
+
     SharedPreferences Pref1;
 
     public static final int SELECT_ELEMENT_TASK = 1;
 
-    /*private int[] buttonIds = {R.id.bin1, R.id.bin2};*/
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +42,7 @@ public class GameScreen extends AppCompatActivity {
             }
         };
         button.setOnClickListener(listener);
-        int amm = 15;
+        int amm = 100;
         final String[][] res = new String[amm][amm];
         final Boolean[][] boolres = new Boolean[amm][amm];
         for (int i=0;i<amm;i++){
@@ -50,18 +50,6 @@ public class GameScreen extends AppCompatActivity {
                 boolres[i][j]=false;
             }
         }
-        /*
-
-        for (int id : buttonIds) {
-
-        }
-
-        for (int i = 0; i < buttonIds.length; i++) {
-            int buttonId = buttonIds[i];
-            Button btn = (Button) findViewById(buttonId);
-        }*/
-
-
         res[1][2]="SO2";
         res[2][1]="SO2";
         boolres[1][2]=true;
@@ -102,11 +90,63 @@ public class GameScreen extends AppCompatActivity {
         res[14][10]="ZnCl2";
         boolres[10][14]=true;
         boolres[14][10]=true;
+        res[1][11]="CO2";
+        res[11][1]="CO2";
+        boolres[1][11]=true;
+        boolres[11][1]=true;
+        res[8][17]="CaCO3";
+        res[17][8]="CaCO3";
+        boolres[8][17]=true;
+        boolres[17][8]=true;
+        res[14][19]="CuCl2";
+        res[19][14]="CuCl2";
+        boolres[14][19]=true;
+        boolres[19][14]=true;
+        res[12][17]="H2CO3";
+        res[17][12]="H2CO3";
+        boolres[12][17]=true;
+        boolres[17][12]=true;
+        res[5][1]="Na2O2";
+        res[1][5]="Na2O2";
+        boolres[5][1]=true;
+        boolres[1][5]=true;
+        res[5][20]="Na2O";
+        res[20][5]="Na2O";
+        boolres[5][20]=true;
+        boolres[20][5]=true;
+        res[12][21]="NaOH";
+        res[21][12]="NaOH";
+        boolres[12][21]=true;
+        boolres[21][12]=true;
+        res[16][2]="FeS";
+        res[2][16]="FeS";
+        boolres[2][16]=true;
+        boolres[16][2]=true;
+        res[7][14]="MgCl2";
+        res[14][7]="MgCl2";
+        boolres[7][14]=true;
+        boolres[14][7]=true;
+        res[5][2]="Na2S";
+        res[2][5]="Na2S";
+        boolres[2][5]=true;
+        boolres[5][2]=true;
+        res[4][2]="H2S";
+        res[2][4]="H2S";
+        boolres[2][4]=true;
+        boolres[4][2]=true;
+        res[4][2]="H2S";
+        res[2][4]="H2S";
+        boolres[2][4]=true;
+        boolres[4][2]=true;
+        res[16][24]="FeCl";
+        res[24][16]="FeCl";
+        boolres[16][24]=true;
+        boolres[24][16]=true;
         final Map <String, Integer> elements= new HashMap<>();
         elements.put("O2",1);
         elements.put("S",2);
-        elements.put("Cl",3);
-        elements.put("H",4);
+        elements.put("Cl2",3);
+        elements.put("H2",4);
         elements.put("Na",5);
         elements.put("Al",6);
         elements.put("Mg",7);
@@ -114,12 +154,26 @@ public class GameScreen extends AppCompatActivity {
         elements.put("Cu",9);
         elements.put("Zn",10);
         elements.put("C",11);
-        elements.put("Fe",12);
         elements.put("H2O",12);
         elements.put("SO2",13);
         elements.put("HCl",14);
         elements.put("MgO",15);
-
+        elements.put("Fe",16);
+        elements.put("CO2",17);
+        elements.put("Ra", 18);
+        elements.put("CuO", 19);
+        elements.put("Na2O2", 20);
+        elements.put("Na2O", 21);
+        elements.put("Na2S", 22);
+        elements.put("CuCl2", 24);
+        elements.put("FeCl", 25);
+        elements.put("NaOH", 26);
+        elements.put("MgCl2", 27);
+        elements.put("FeS", 28);
+        elements.put("H2CO3", 29);
+        elements.put("ZnCl2", 30);
+        elements.put("CaO", 31);
+        elements.put("Al2S3", 32);
         final Button button1 = (Button) findViewById(R.id.bin22);
         View.OnClickListener listener1 = new View.OnClickListener() {
             @Override
@@ -128,6 +182,10 @@ public class GameScreen extends AppCompatActivity {
                 Button button12 = (Button) findViewById(R.id.bin21);
                 String a = button11.getText().toString();
                 String b = button12.getText().toString();
+               if ((a.equals("Ra"))||(b.equals("Ra"))) {
+                   editor.putString("Ra1", "1001");
+                   editor.commit();
+             }
                 if ((!a.equals(""))&&(!b.equals(""))){
                     int number1 = elements.get(a);
                     int number2 = elements.get(b);
@@ -135,34 +193,20 @@ public class GameScreen extends AppCompatActivity {
                         button1.setText(res[number1][number2]);
                         button11.setText("");
                         button12.setText("");
-
-                        /*if (res[number1][number2].equals("HCl")) {
-                            k1 = true;
-                        }*/
-                            editor.putString(button1.getText().toString(), button1.getText().toString());
-                            editor.commit();
-                        /*Button buttontest = (Button) findViewById(R.id.bin22);
-                        View.OnClickListener listenertest = new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                Intent intent = new Intent(GameScreen.this, Main3Activity.class);
-                                intent.putExtra("Ar", k1);
-                                startActivity(intent);
-                            }
-                        };
-                            buttontest.setOnClickListener(listenertest);*/
+                        editor.putString(button1.getText().toString(), button1.getText().toString());
+                        editor.commit();
                     }else {
                         button1.setText("Реакция не идет");
                         button11.setText("");
                         button12.setText("");
                     }
+
                 }
             }
         };
         button1.setOnClickListener(listener1);
 
     }
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode) {
