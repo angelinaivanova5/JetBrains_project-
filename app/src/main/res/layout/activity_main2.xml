@@ -22,7 +22,7 @@
             android:background="@null"
             android:text=""
             android:textAllCaps="false"
-            android:textColor="@color/elem"
+            android:textColor="@color/backachiv"
             android:textSize="80sp"
             android:textStyle="bold" />
 
@@ -34,7 +34,7 @@
             android:background="@null"
             android:text=""
             android:textAllCaps="false"
-            android:textColor="@color/elem"
+            android:textColor="@color/backachiv"
             android:textSize="80sp"
             android:textStyle="bold" />
 

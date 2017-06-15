@@ -11,7 +11,7 @@
     <color name="name">#065dce</color>
     <color name="backachiv">#fcfbe3</color>
     <color name="result">#a896e3</color>
-    <color name="newbutt">#bb8236</color>
+    <color name="newbutt">#966321</color>
     <color name="textbutt">#ebe2af</color>
     <color name="chemistry">#30220b</color>
     <color name="buttongol">#88c3db</color>
@@ -19,4 +19,5 @@
     <color name="begin">#f5a33f</color>
     <color name="begin2">#fac078</color>
     <color name="elem">#700909</color>
+    <color name="text">#2d1f0c</color>
 </resources>

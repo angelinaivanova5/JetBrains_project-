@@ -63,7 +63,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:text="Chemistry"
-        android:textColor="@color/chemistry"
+        android:textColor="@color/text"
         android:textSize="70sp"
         android:textStyle="bold" />
 
