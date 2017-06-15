@@ -29,7 +29,7 @@ public class GameScreen extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         Pref1 = PreferenceManager.getDefaultSharedPreferences(this);
 
-//       Pref1.edit().clear().apply();
+      Pref1.edit().clear().apply();
 
         final SharedPreferences.Editor editor = Pref1.edit();
         final Button button = (Button) findViewById(R.id.bin4);

@@ -4,7 +4,7 @@
     style="@android:style/Widget.Holo.Light.ScrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backg">
+    android:background="@drawable/fonn">
 
     <GridLayout
         android:layout_width="match_parent"
@@ -14,11 +14,11 @@
         <Button
             android:id="@+id/bin5"
             android:layout_width="120dp"
-            android:layout_marginLeft="25dp"
             android:layout_height="60dp"
-            android:backgroundTint="@color/button"
-            android:text="@string/belem1"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="50dp"
+            android:backgroundTint="@color/buttongol"
+            android:text="@string/belem1"
             android:textAllCaps="false"
             android:textStyle="bold" />
 
@@ -27,7 +27,7 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:backgroundTint="@color/button"
+            android:backgroundTint="@color/buttongol"
             android:text="@string/belem6"
             android:textAllCaps="false"
             android:textStyle="bold"
@@ -38,7 +38,7 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:layout_marginTop="50dp"
-            android:backgroundTint="@color/button"
+            android:backgroundTint="@color/buttongol"
             android:text="@string/belem2"
             android:textAllCaps="false"
             android:textStyle="bold" />
@@ -49,7 +49,7 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:layout_marginTop="50dp"
-            android:backgroundTint="@color/button"
+            android:backgroundTint="@color/buttongol"
             android:text="@string/belem3"
             android:textAllCaps="false"
             android:textStyle="bold" />
@@ -59,7 +59,7 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:layout_marginTop="50dp"
-            android:backgroundTint="@color/button"
+            android:backgroundTint="@color/buttongol"
             android:text="@string/belem4"
             android:textAllCaps="false"
             android:textStyle="bold" />
@@ -69,7 +69,7 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:layout_marginTop="50dp"
-            android:backgroundTint="@color/button"
+            android:backgroundTint="@color/buttongol"
             android:text="@string/belem5"
             android:textAllCaps="false"
             android:textStyle="bold" />
@@ -80,7 +80,7 @@
             android:layout_marginLeft="25dp"
             android:layout_height="60dp"
             android:layout_marginTop="50dp"
-            android:backgroundTint="@color/button"
+            android:backgroundTint="@color/buttongol"
             android:text="@string/belem7"
             android:textAllCaps="false"
             android:textStyle="bold" />
@@ -91,7 +91,7 @@
             android:layout_height="60dp"
 
             android:layout_marginTop="50dp"
-            android:backgroundTint="@color/button"
+            android:backgroundTint="@color/buttongol"
             android:text="@string/belem8"
             android:textAllCaps="false"
             android:textStyle="bold" />
@@ -101,7 +101,7 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:layout_marginTop="50dp"
-            android:backgroundTint="@color/button"
+            android:backgroundTint="@color/buttongol"
             android:text="@string/belem9"
             android:textAllCaps="false"
             android:textStyle="bold" />
@@ -112,7 +112,7 @@
             android:layout_height="60dp"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="50dp"
-            android:backgroundTint="@color/button"
+            android:backgroundTint="@color/buttongol"
             android:text="@string/belem10"
             android:textAllCaps="false"
             android:textStyle="bold" />
@@ -123,7 +123,7 @@
             android:layout_height="60dp"
 
             android:layout_marginTop="50dp"
-            android:backgroundTint="@color/button"
+            android:backgroundTint="@color/buttongol"
             android:text="@string/belem11"
             android:textAllCaps="false"
             android:textStyle="bold" />
@@ -134,7 +134,7 @@
             android:layout_height="60dp"
 
             android:layout_marginTop="50dp"
-            android:backgroundTint="@color/button"
+            android:backgroundTint="@color/buttongol"
             android:text="@string/belem12"
             android:textAllCaps="false"
             android:textStyle="bold" />
@@ -145,7 +145,7 @@
             android:layout_height="60dp"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="50dp"
-            android:backgroundTint="@color/button"
+            android:backgroundTint="@color/buttongol"
             android:text="@string/lock"
             android:textAllCaps="false"
             android:textStyle="bold" />
@@ -156,7 +156,7 @@
             android:layout_height="60dp"
 
             android:layout_marginTop="50dp"
-            android:backgroundTint="@color/button"
+            android:backgroundTint="@color/buttongol"
             android:text="@string/lock"
             android:textAllCaps="false"
             android:textStyle="bold" />
@@ -167,7 +167,7 @@
             android:layout_height="60dp"
 
             android:layout_marginTop="50dp"
-            android:backgroundTint="@color/button"
+            android:backgroundTint="@color/buttongol"
             android:text="@string/lock"
             android:textAllCaps="false"
             android:textStyle="bold" />
@@ -178,7 +178,7 @@
             android:layout_height="60dp"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="50dp"
-            android:backgroundTint="@color/button"
+            android:backgroundTint="@color/buttongol"
             android:text="@string/lock"
             android:textAllCaps="false"
             android:textStyle="bold" />
@@ -189,7 +189,7 @@
             android:layout_height="60dp"
 
             android:layout_marginTop="50dp"
-            android:backgroundTint="@color/button"
+            android:backgroundTint="@color/buttongol"
             android:text="@string/lock"
             android:textAllCaps="false"
             android:textStyle="bold" />
@@ -200,7 +200,7 @@
             android:layout_height="60dp"
 
             android:layout_marginTop="50dp"
-            android:backgroundTint="@color/button"
+            android:backgroundTint="@color/buttongol"
             android:text="@string/lock"
             android:textAllCaps="false"
             android:textStyle="bold" />

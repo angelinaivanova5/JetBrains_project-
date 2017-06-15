@@ -2,7 +2,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:background="@color/backg">
+    android:background="@drawable/fon7">
 
 
     <Button
@@ -14,10 +14,10 @@
         android:layout_marginTop="140dp"
         android:width="200dp"
         android:height="100dp"
-        android:backgroundTint="@color/button"
+        android:backgroundTint="@color/newbutt"
         android:text="Начать игру"
         android:textAllCaps="false"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/textbutt"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -31,10 +31,10 @@
         android:layout_marginTop="50dp"
         android:width="200dp"
         android:height="70dp"
-        android:backgroundTint="@color/button"
+        android:backgroundTint="@color/newbutt"
         android:text="Коллекция элементов"
         android:textAllCaps="false"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/textbutt"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -48,11 +48,11 @@
         android:layout_marginTop="50dp"
         android:width="200dp"
         android:height="60dp"
-        android:backgroundTint="@color/button"
+        android:backgroundTint="@color/newbutt"
         android:text="Достижения"
-        android:textSize="20sp"
         android:textAllCaps="false"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/textbutt"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <TextView
@@ -63,8 +63,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:text="Chemistry"
-        android:textColor="@color/name"
-        android:textSize="45sp"
+        android:textColor="@color/chemistry"
+        android:textSize="70sp"
         android:textStyle="bold" />
 
 </RelativeLayout>
