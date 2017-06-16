@@ -297,7 +297,7 @@ import com.example.user.myapplication.R;
 
                       @Override
                       public void onClick(View v) {
-                          showElementInfo(getString(R.string.H2O), R.drawable.ferum);
+                          showElementInfo(getString(R.string.H2O), R.drawable.qe);
 
                       }
                   });
@@ -308,7 +308,7 @@ import com.example.user.myapplication.R;
 
                       @Override
                       public void onClick(View v) {
-                          showElementInfo(getString(R.string.SO2), R.drawable.ferum);
+                          showElementInfo(getString(R.string.SO2), R.drawable.qe);
 
                       }
                   });
@@ -319,7 +319,7 @@ import com.example.user.myapplication.R;
 
                       @Override
                       public void onClick(View v) {
-                          showElementInfo(getString(R.string.HCl), R.drawable.ferum);
+                          showElementInfo(getString(R.string.HCl), R.drawable.qe);
 
                       }
 
@@ -332,7 +332,7 @@ import com.example.user.myapplication.R;
 
                       @Override
                       public void onClick(View v) {
-                          showElementInfo(getString(R.string.MgO), R.drawable.ferum);
+                          showElementInfo(getString(R.string.MgO), R.drawable.qe);
 
                       }
                   });
@@ -343,7 +343,7 @@ import com.example.user.myapplication.R;
 
                       @Override
                       public void onClick(View v) {
-                          showElementInfo(getString(R.string.CO2), R.drawable.ferum);
+                          showElementInfo(getString(R.string.CO2), R.drawable.qe);
 
                       }
                   });
@@ -354,7 +354,7 @@ import com.example.user.myapplication.R;
 
                       @Override
                       public void onClick(View v) {
-                          showElementInfo(getString(R.string.CuO), R.drawable.ferum);
+                          showElementInfo(getString(R.string.CuO), R.drawable.qe);
 
                       }
                   });
@@ -365,7 +365,7 @@ import com.example.user.myapplication.R;
 
                       @Override
                       public void onClick(View v) {
-                          showElementInfo(getString(R.string.Na2O2), R.drawable.ferum);
+                          showElementInfo(getString(R.string.Na2O2), R.drawable.qe);
 
                       }
                   });
@@ -376,7 +376,7 @@ import com.example.user.myapplication.R;
 
                       @Override
                       public void onClick(View v) {
-                          showElementInfo(getString(R.string.Na2O), R.drawable.ferum);
+                          showElementInfo(getString(R.string.Na2O), R.drawable.qe);
 
                       }
 
@@ -389,7 +389,7 @@ import com.example.user.myapplication.R;
 
                       @Override
                       public void onClick(View v) {
-                          showElementInfo(getString(R.string.Na2S), R.drawable.ferum);
+                          showElementInfo(getString(R.string.Na2S), R.drawable.qe);
 
                       }
                   });
@@ -400,7 +400,7 @@ import com.example.user.myapplication.R;
 
                       @Override
                       public void onClick(View v) {
-                          showElementInfo(getString(R.string.CuCl2), R.drawable.ferum);
+                          showElementInfo(getString(R.string.CuCl2), R.drawable.qe);
 
                       }
                   });
@@ -411,7 +411,7 @@ import com.example.user.myapplication.R;
 
                       @Override
                       public void onClick(View v) {
-                          showElementInfo(getString(R.string.FeCl), R.drawable.ferum);
+                          showElementInfo(getString(R.string.FeCl), R.drawable.qe);
 
                       }
                   });
@@ -422,7 +422,7 @@ import com.example.user.myapplication.R;
 
                       @Override
                       public void onClick(View v) {
-                          showElementInfo(getString(R.string.NaOH), R.drawable.ferum);
+                          showElementInfo(getString(R.string.NaOH), R.drawable.qe);
 
                       }
                   });
@@ -433,7 +433,7 @@ import com.example.user.myapplication.R;
 
                       @Override
                       public void onClick(View v) {
-                          showElementInfo(getString(R.string.MgCl2), R.drawable.ferum);
+                          showElementInfo(getString(R.string.MgCl2), R.drawable.qe);
 
                       }
 
@@ -446,7 +446,7 @@ import com.example.user.myapplication.R;
 
                       @Override
                       public void onClick(View v) {
-                          showElementInfo(getString(R.string.FeS), R.drawable.ferum);
+                          showElementInfo(getString(R.string.FeS), R.drawable.qe);
 
                       }
                   });
@@ -457,7 +457,7 @@ import com.example.user.myapplication.R;
 
                       @Override
                       public void onClick(View v) {
-                          showElementInfo(getString(R.string.FeS), R.drawable.ferum);
+                          showElementInfo(getString(R.string.FeS), R.drawable.qe);
 
                       }
                   });
@@ -468,7 +468,7 @@ import com.example.user.myapplication.R;
 
                       @Override
                       public void onClick(View v) {
-                          showElementInfo(getString(R.string.H2CO3), R.drawable.ferum);
+                          showElementInfo(getString(R.string.H2CO3), R.drawable.qe);
 
                       }
                   });
@@ -479,7 +479,7 @@ import com.example.user.myapplication.R;
 
                       @Override
                       public void onClick(View v) {
-                          showElementInfo(getString(R.string.ZnCl2), R.drawable.ferum);
+                          showElementInfo(getString(R.string.ZnCl2), R.drawable.qe);
 
                       }
                   });
@@ -490,7 +490,7 @@ import com.example.user.myapplication.R;
 
                       @Override
                       public void onClick(View v) {
-                          showElementInfo(getString(R.string.CaO), R.drawable.ferum);
+                          showElementInfo(getString(R.string.CaO), R.drawable.qe);
 
                       }
 
@@ -503,7 +503,7 @@ import com.example.user.myapplication.R;
 
                       @Override
                       public void onClick(View v) {
-                          showElementInfo(getString(R.string.Al2S3), R.drawable.ferum);
+                          showElementInfo(getString(R.string.Al2S3), R.drawable.qe);
 
                       }
                   });
