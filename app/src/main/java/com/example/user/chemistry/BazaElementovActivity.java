@@ -60,6 +60,118 @@ import com.example.user.myapplication.R;
                       button18.setText("CO2");
                   }
               }
+              Button button19 = (Button) findViewById(R.id.button34);
+              String a6 = button19.getText().toString();
+              String text6= Pref1.getString("CuO" , "");
+              if (a6.equals("Locked")) {
+                  if (!text6.equals("")){
+                      button19.setText("CuO");
+                  }
+              }
+              Button button20 = (Button) findViewById(R.id.button35);
+              String a7 = button20.getText().toString();
+              String text7= Pref1.getString("Na2O2" , "");
+              if (a7.equals("Locked")) {
+                  if (!text7.equals("")){
+                      button20.setText("Na2O2");
+                  }
+              }
+              Button button21 = (Button) findViewById(R.id.button36);
+              String a8 = button21.getText().toString();
+              String text8= Pref1.getString("Na2O" , "");
+              if (a8.equals("Locked")) {
+                  if (!text8.equals("")){
+                      button21.setText("Na2O");
+                  }
+              }
+              Button button22 = (Button) findViewById(R.id.button37);
+              String a9 = button22.getText().toString();
+              String text9= Pref1.getString("Na2S" , "");
+              if (a9.equals("Locked")) {
+                  if (!text9.equals("")){
+                      button22.setText("Na2S");
+                  }
+              }
+              Button button23 = (Button) findViewById(R.id.button38);
+              String a10 = button23.getText().toString();
+              String text10 = Pref1.getString("CuCl2" , "");
+              if (a10.equals("Locked")) {
+                  if (!text10.equals("")){
+                      button23.setText("CuCl2");
+                  }
+              }
+              Button button24 = (Button) findViewById(R.id.button39);
+              String a11 = button24.getText().toString();
+              String text11= Pref1.getString("FeCl" , "");
+              if (a11.equals("Locked")) {
+                  if (!text11.equals("")){
+                      button24.setText("FeCl");
+                  }
+              }
+              Button button25 = (Button) findViewById(R.id.button40);
+              String a12 = button25.getText().toString();
+              String text12= Pref1.getString("NaOH" , "");
+              if (a12.equals("Locked")) {
+                  if (!text12.equals("")){
+                      button25.setText("NaOH");
+                  }
+              }
+              Button button26 = (Button) findViewById(R.id.button41);
+              String a13 = button26.getText().toString();
+              String text13 = Pref1.getString("MgCl2" , "");
+              if (a13.equals("Locked")) {
+                  if (!text13.equals("")){
+                      button26.setText("MgCl2");
+                  }
+              }
+              Button button27 = (Button) findViewById(R.id.button42);
+              String a14 = button27.getText().toString();
+              String text14= Pref1.getString("FeS" , "");
+              if (a14.equals("Locked")) {
+                  if (!text14.equals("")){
+                      button27.setText("FeS");
+                  }
+              }
+              Button button28 = (Button) findViewById(R.id.button43);
+              String a15 = button28.getText().toString();
+              String text15= Pref1.getString("SO2" , "");
+              if (a15.equals("Locked")) {
+                  if (!text15.equals("")){
+                      button28.setText("SO2");
+                  }
+              }
+              Button button29 = (Button) findViewById(R.id.button44);
+              String a16 = button29.getText().toString();
+              String text16= Pref1.getString("H2CO3" , "");
+              if (a16.equals("Locked")) {
+                  if (!text16.equals("")){
+                      button29.setText("H2CO3");
+                  }
+              }
+              Button button30 = (Button) findViewById(R.id.button45);
+              String a17 = button30.getText().toString();
+              String text17= Pref1.getString("ZnCl2" , "");
+              if (a17.equals("Locked")) {
+                  if (!text17.equals("")){
+                      button30.setText("ZnCl2");
+                  }
+              }
+              Button button31 = (Button) findViewById(R.id.button46);
+              String a18 = button31.getText().toString();
+              String text18 = Pref1.getString("CaO" , "");
+              if (a18.equals("Locked")) {
+                  if (!text18.equals("")){
+                      button31.setText("CaO");
+                  }
+              }
+              Button button32 = (Button) findViewById(R.id.button47);
+              String a19 = button32.getText().toString();
+              String text19 = Pref1.getString("Al2S3" , "");
+              if (a19.equals("Locked")) {
+                  if (!text19.equals("")){
+                      button32.setText("Al2S3");
+                  }
+              }
               Button button = (Button) findViewById(R.id.button17);
               button.setOnClickListener(new View.OnClickListener(){
 
@@ -191,48 +303,211 @@ import com.example.user.myapplication.R;
                   });
               }
               Button button101 = (Button) findViewById(R.id.button30);
-              button101.setOnClickListener(new View.OnClickListener(){
+              if (!button101.getText().equals("Locked")) {
+                  button101.setOnClickListener(new View.OnClickListener() {
 
-                  @Override
-                  public void onClick(View v) {
-                      showElementInfo(getString(R.string.SO2), R.drawable.ferum);
+                      @Override
+                      public void onClick(View v) {
+                          showElementInfo(getString(R.string.SO2), R.drawable.ferum);
 
-                  }
-              });
-
+                      }
+                  });
+              }
               Button button102 = (Button) findViewById(R.id.button31);
-              button102.setOnClickListener(new View.OnClickListener(){
+              if (!button102.getText().equals("Locked")) {
+                  button102.setOnClickListener(new View.OnClickListener() {
 
-                  @Override
-                  public void onClick(View v) {
-                      showElementInfo(getString(R.string.HCl), R.drawable.ferum);
+                      @Override
+                      public void onClick(View v) {
+                          showElementInfo(getString(R.string.HCl), R.drawable.ferum);
 
-                  }
+                      }
 
 
-              });
-
+                  });
+              }
               Button button103 = (Button) findViewById(R.id.button32);
-              button103.setOnClickListener(new View.OnClickListener(){
+              if (!button103.getText().equals("Locked")) {
+                  button103.setOnClickListener(new View.OnClickListener() {
 
-                  @Override
-                  public void onClick(View v) {
-                      showElementInfo(getString(R.string.MgO), R.drawable.ferum);
+                      @Override
+                      public void onClick(View v) {
+                          showElementInfo(getString(R.string.MgO), R.drawable.ferum);
 
-                  }
-              });
-
+                      }
+                  });
+              }
               Button button104 = (Button) findViewById(R.id.button33);
-              button104.setOnClickListener(new View.OnClickListener(){
+              if (!button104.getText().equals("Locked")) {
+                  button104.setOnClickListener(new View.OnClickListener() {
 
-                  @Override
-                  public void onClick(View v) {
-                      showElementInfo(getString(R.string.CO2), R.drawable.ferum);
+                      @Override
+                      public void onClick(View v) {
+                          showElementInfo(getString(R.string.CO2), R.drawable.ferum);
 
-                  }
-              });
+                      }
+                  });
+              }
+              Button button105 = (Button) findViewById(R.id.button34);
+              if (!button105.getText().equals("Locked")) {
+                  button105.setOnClickListener(new View.OnClickListener() {
+
+                      @Override
+                      public void onClick(View v) {
+                          showElementInfo(getString(R.string.CuO), R.drawable.ferum);
+
+                      }
+                  });
+              }
+              Button button106 = (Button) findViewById(R.id.button35);
+              if (!button106.getText().equals("Locked")) {
+                  button106.setOnClickListener(new View.OnClickListener() {
+
+                      @Override
+                      public void onClick(View v) {
+                          showElementInfo(getString(R.string.Na2O2), R.drawable.ferum);
+
+                      }
+                  });
+              }
+              Button button107 = (Button) findViewById(R.id.button36);
+              if (!button107.getText().equals("Locked")) {
+                  button107.setOnClickListener(new View.OnClickListener() {
+
+                      @Override
+                      public void onClick(View v) {
+                          showElementInfo(getString(R.string.Na2O), R.drawable.ferum);
+
+                      }
 
 
+                  });
+              }
+              Button button108 = (Button) findViewById(R.id.button37);
+              if (!button108.getText().equals("Locked")) {
+                  button108.setOnClickListener(new View.OnClickListener() {
+
+                      @Override
+                      public void onClick(View v) {
+                          showElementInfo(getString(R.string.Na2S), R.drawable.ferum);
+
+                      }
+                  });
+              }
+              Button button109 = (Button) findViewById(R.id.button38);
+              if (!button109.getText().equals("Locked")) {
+                  button109.setOnClickListener(new View.OnClickListener() {
+
+                      @Override
+                      public void onClick(View v) {
+                          showElementInfo(getString(R.string.CuCl2), R.drawable.ferum);
+
+                      }
+                  });
+              }
+              Button button110 = (Button) findViewById(R.id.button39);
+              if (!button110.getText().equals("Locked")) {
+                  button110.setOnClickListener(new View.OnClickListener() {
+
+                      @Override
+                      public void onClick(View v) {
+                          showElementInfo(getString(R.string.FeCl), R.drawable.ferum);
+
+                      }
+                  });
+              }
+              Button button111 = (Button) findViewById(R.id.button40);
+              if (!button111.getText().equals("Locked")) {
+                  button111.setOnClickListener(new View.OnClickListener() {
+
+                      @Override
+                      public void onClick(View v) {
+                          showElementInfo(getString(R.string.NaOH), R.drawable.ferum);
+
+                      }
+                  });
+              }
+              Button button112 = (Button) findViewById(R.id.button41);
+              if (!button112.getText().equals("Locked")) {
+                  button112.setOnClickListener(new View.OnClickListener() {
+
+                      @Override
+                      public void onClick(View v) {
+                          showElementInfo(getString(R.string.MgCl2), R.drawable.ferum);
+
+                      }
+
+
+                  });
+              }
+              Button button113 = (Button) findViewById(R.id.button42);
+              if (!button113.getText().equals("Locked")) {
+                  button113.setOnClickListener(new View.OnClickListener() {
+
+                      @Override
+                      public void onClick(View v) {
+                          showElementInfo(getString(R.string.FeS), R.drawable.ferum);
+
+                      }
+                  });
+              }
+              Button button114 = (Button) findViewById(R.id.button43);
+              if (!button114.getText().equals("Locked")) {
+                  button114.setOnClickListener(new View.OnClickListener() {
+
+                      @Override
+                      public void onClick(View v) {
+                          showElementInfo(getString(R.string.FeS), R.drawable.ferum);
+
+                      }
+                  });
+              }
+              Button button115 = (Button) findViewById(R.id.button44);
+              if (!button115.getText().equals("Locked")) {
+                  button115.setOnClickListener(new View.OnClickListener() {
+
+                      @Override
+                      public void onClick(View v) {
+                          showElementInfo(getString(R.string.H2CO3), R.drawable.ferum);
+
+                      }
+                  });
+              }
+              Button button116 = (Button) findViewById(R.id.button45);
+              if (!button116.getText().equals("Locked")) {
+                  button116.setOnClickListener(new View.OnClickListener() {
+
+                      @Override
+                      public void onClick(View v) {
+                          showElementInfo(getString(R.string.ZnCl2), R.drawable.ferum);
+
+                      }
+                  });
+              }
+              Button button117 = (Button) findViewById(R.id.button46);
+              if (!button117.getText().equals("Locked")) {
+                  button117.setOnClickListener(new View.OnClickListener() {
+
+                      @Override
+                      public void onClick(View v) {
+                          showElementInfo(getString(R.string.CaO), R.drawable.ferum);
+
+                      }
+
+
+                  });
+              }
+              Button button118 = (Button) findViewById(R.id.button47);
+              if (!button118.getText().equals("Locked")) {
+                  button118.setOnClickListener(new View.OnClickListener() {
+
+                      @Override
+                      public void onClick(View v) {
+                          showElementInfo(getString(R.string.Al2S3), R.drawable.ferum);
+
+                      }
+                  });
+              }
           }
 
           private Toast oldToast = null;

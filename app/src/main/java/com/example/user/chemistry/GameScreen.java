@@ -182,10 +182,6 @@ public class GameScreen extends AppCompatActivity {
                 Button button12 = (Button) findViewById(R.id.bin21);
                 String a = button11.getText().toString();
                 String b = button12.getText().toString();
-               if ((a.equals("Ra"))||(b.equals("Ra"))) {
-                   editor.putString("Ra1", "1001");
-                   editor.commit();
-             }
                 if ((!a.equals(""))&&(!b.equals(""))){
                     int number1 = elements.get(a);
                     int number2 = elements.get(b);
